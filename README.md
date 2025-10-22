@@ -1,5 +1,5 @@
-Freedom Fighters
-[![Build Status]][actions] [![Code Progress]][progress] [![Data Progress]][progress] [![Discord Badge]][discord]
+Freedom Fighters  
+[![Discord Badge]][discord]
 =============
 
 [Build Status]: https://github.com/andresj-sanchez/frfi-decomp/actions/workflows/build.yml/badge.svg
