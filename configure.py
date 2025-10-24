@@ -157,11 +157,11 @@ if not config.non_matching:
 
 # Tool versions
 config.binutils_tag = "2.42-1"
-config.compilers_tag = "20250812"
+config.compilers_tag = "20250513"
 config.dtk_tag = "v1.6.2"
-config.objdiff_tag = "v3.0.0-beta.14"
-config.sjiswrap_tag = "v1.2.1"
-config.wibo_tag = "0.7.0"
+config.objdiff_tag = "v3.3.0"
+config.sjiswrap_tag = "v1.2.0"
+config.wibo_tag = "1.0.0-alpha.3"
 
 # Project
 config.config_path = Path("config") / config.version / "config.yml"
@@ -173,15 +173,8 @@ config.asflags = [
     f"-I build/{config.version}/include",
     f"--defsym BUILD_VERSION={version_num}",
 ]
-config.ldflags = [
-    "-fp hardware",
-    "-nodefaults",
-]
-if args.debug:
-    config.ldflags.append("-g")  # Or -gdwarf-2 for Wii linkers
-if args.map:
-    config.ldflags.append("-mapunused")
-    # config.ldflags.append("-listclosure") # For Wii linkers
+ldscript_path = Path("config") / config.version / "ldscript.ld"
+config.ldflags = ["-T", str(ldscript_path)]
 
 # Use for any additional files that should cause a re-configure when modified
 config.reconfig_deps = []
@@ -193,89 +186,92 @@ config.scratch_preset_id = None
 # Base flags, common to most GC/Wii games.
 # Generally leave untouched, with overrides added below.
 cflags_base = [
-    "-nodefaults",
-    "-proc gekko",
-    "-align powerpc",
-    "-enum int",
-    "-fp hardware",
-    "-Cpp_exceptions off",
-    # "-W all",
-    "-O4,p",
-    "-inline auto",
-    '-pragma "cats off"',
-    '-pragma "warn_notinlined off"',
-    "-maxerrors 1",
-    "-nosyspath",
-    "-RTTI off",
-    "-fp_contract on",
-    "-str reuse",
-    "-multibyte",  # For Wii compilers, replace with `-enc SJIS`
-    "-i include",
-    f"-i build/{config.version}/include",
+    "-O1",
+    "-gdwarf",
+    # "-Wall",
+    "-I include",
+    "-I ./",
+    "-I src",
+    "-DTARGET_GC",
+    "-DGEKKO",
+    "-D_USE_MATH_DEFINES",
+    f"-I build/{config.version}/include",
     f"-DBUILD_VERSION={version_num}",
     f"-DVERSION_{config.version}",
 ]
 
 # Debug flags
 if args.debug:
-    # Or -sym dwarf-2 for Wii compilers
-    cflags_base.extend(["-sym on", "-DDEBUG=1"])
+    cflags_base.append("-DDEBUG=1")
 else:
     cflags_base.append("-DNDEBUG=1")
 
-# Warning flags
-if args.warn == "all":
-    cflags_base.append("-W all")
-elif args.warn == "off":
-    cflags_base.append("-W off")
-elif args.warn == "error":
-    cflags_base.append("-W error")
+cflags_game = [
+    *cflags_base,
+    "-mps-nodf",
+    # "-mfast-cast",
+    "-G0",
+    "-ffast-math",
+    # "-fno-strength-reduce",
+    "-fforce-addr",
+    "-fcse-follow-jumps",
+    "-fcse-skip-blocks",
+    "-fforce-mem",
+    "-fgcse",
+    "-frerun-cse-after-loop",
+    "-fschedule-insns",
+    "-fschedule-insns2",
+    "-fexpensive-optimizations",
+    "-frerun-loop-opt",
+    "-fmove-all-movables",
+    # "-fno-defer-pop",
+    # "-fno-function-cse",
+    # "-fpeephole",
+    # "-fregmove",
+    # "-fno-thread-jumps",
+    # "-freduce-all-givs",
+    # # "-fcaller-saves",
+    # # "-ffloat-store",
+    # # "-funroll-all-loops",
+    "-DLUA_NUMBER=float",
+]
+
+cflags_cmn = [*cflags_game, "-x c++"]
 
 # Metrowerks library flags
-cflags_runtime = [
-    *cflags_base,
-    "-use_lmw_stmw on",
-    "-str reuse,pool,readonly",
-    "-gccinc",
-    "-common off",
-    "-inline auto",
-]
+cflags_runtime = [*cflags_base]
 
-# REL flags
-cflags_rel = [
-    *cflags_base,
-    "-sdata 0",
-    "-sdata2 0",
-]
+cflags_odemuexi = [*cflags_base]
 
-config.linker_version = "GC/1.3.2"
+cflags_amcstub = [*cflags_base]
+
+cflags_libc = [*cflags_base]
+
+config.linker_version = "ProDG/3.9.3"
+
+config.extra_clang_flags = [
+    "-std=gnu++98",
+    "-DSN_TARGET_NGC",
+    "-D__SN__",
+]
 
 
 # Helper function for Dolphin libraries
 def DolphinLib(lib_name: str, objects: List[Object]) -> Dict[str, Any]:
     return {
         "lib": lib_name,
-        "mw_version": "GC/1.2.5n",
+        "toolchain_version": "ProDG/3.9.3",
         "cflags": cflags_base,
         "progress_category": "sdk",
         "objects": objects,
     }
 
 
-# Helper function for REL script objects
-def Rel(lib_name: str, objects: List[Object]) -> Dict[str, Any]:
-    return {
-        "lib": lib_name,
-        "mw_version": "GC/1.3.2",
-        "cflags": cflags_rel,
-        "progress_category": "game",
-        "objects": objects,
-    }
-
-
-Matching = True                   # Object matches and should be linked
-NonMatching = False               # Object does not match and should not be linked
-Equivalent = config.non_matching  # Object should be linked when configured with --non-matching
+Matching = True  # Object matches and should be linked
+NonMatching = False  # Object does not match and should not be linked
+Equivalent = (
+    config.non_matching
+)  # Object should be linked when configured with --non-matching
 
 
 # Object is only matching for specific versions

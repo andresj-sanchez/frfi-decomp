@@ -1,13 +1,10 @@
 # See config.example.yml for documentation.
 object_base: orig/GFDE69
 object: sys/main.dol
-hash: e903f53dd267084ba16f2e77e02d1b1c4784295e
+hash: 13ea96ef1371fde425350bc5e957b8684ee7d1fb
 symbols: config/GFDE69/symbols.txt
 splits: config/GFDE69/splits.txt
-# object: sys/startup_release.dol
-# hash: 13ea96ef1371fde425350bc5e957b8684ee7d1fb
-# symbols: config/GFDE69/symbols_elf.txt
-# splits: config/GFDE69/splits_elf.txt
 # Change this to match the linker version.
 # See config.example.yml for a list.
 mw_comment_version: 11
+quick_analysis: true
