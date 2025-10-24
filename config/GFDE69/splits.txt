@@ -1,1 +1,1840 @@
-// Intentionally empty. Initial analysis will generate this automatically.
+Sections:
+	.init       type:code align:4
+	.text       type:code align:16
+	.ctors      type:rodata align:1
+	.dtors      type:rodata align:1
+	.rodata     type:rodata align:8
+	.data       type:data align:32
+	.bss        type:bss align:32
+	.sdata      type:data align:32
+	.sbss       type:bss align:32
+	.sdata2     type:rodata align:8
+
+prodg_fixes.cpp:
+	.ctors      start:0x803B7AA0 end:0x803B7AA4 skip
+    .dtors      start:0x803B7E20 end:0x803B7E24 skip
+
+GameOSD.cpp:
+	.text       start:0x80059450 end:0x8005C4EC
+    .ctors      start:0x803B7AA4 end:0x803B7AA8
+    .dtors      start:0x803B7E24 end:0x803B7E28
+
+Charisma.cpp:
+	.text       start:0x80060814 end:0x80060C80
+	.ctors      start:0x803B7AA8 end:0x803B7AAC
+	.dtors      start:0x803B7E28 end:0x803B7E2C
+
+TargetObtained2.cpp:
+	.text       start:0x80060C80 end:0x800612E0
+	.ctors      start:0x803B7AAC end:0x803B7AB0
+	.dtors      start:0x803B7E2C end:0x803B7E30
+
+FFCameraClass.cpp:
+	.text       start:0x8006184C end:0x80061C8C
+	.ctors      start:0x803B7AB0 end:0x803B7AB4
+	.dtors      start:0x803B7E30 end:0x803B7E34
+
+ZFFHintBox.cpp:
+	.text       start:0x80061C8C end:0x8006225C
+	.ctors      start:0x803B7AB4 end:0x803B7AB8
+	.dtors      start:0x803B7E34 end:0x803B7E38
+
+ZOnScreenDisplay.cpp:
+	.text       start:0x8006225C end:0x8006BE80
+	.ctors      start:0x803B7AB8 end:0x803B7ABC
+	.dtors      start:0x803B7E38 end:0x803B7E3C
+	.sdata      start:0x805AA9C8 end:0x805AA9E8
+
+ZFFActor.cpp:
+	.text       start:0x8006BE80 end:0x80074DB8
+	.ctors      start:0x803B7ABC end:0x803B7AC0
+	.dtors      start:0x803B7E3C end:0x803B7E40
+
+ZFFHero.cpp:
+	.text       start:0x80075EBC end:0x80086A80
+	.ctors      start:0x803B7AC0 end:0x803B7AC4
+	.dtors      start:0x803B7E40 end:0x803B7E44
+
+CheckInsideBox.cpp:
+	.text       start:0x80093634 end:0x80093E88
+	.ctors      start:0x803B7AC4 end:0x803B7AC8
+	.dtors      start:0x803B7E44 end:0x803B7E48
+
+ZFFSimpleTrain2.cpp:
+	.text       start:0x80093E88 end:0x80095098
+	.ctors      start:0x803B7AC8 end:0x803B7ACC
+	.dtors      start:0x803B7E48 end:0x803B7E4C
+
+FormationControl.cpp:
+	.text       start:0x80095098 end:0x80097DD8
+	.ctors      start:0x803B7ACC end:0x803B7AD0
+	.dtors      start:0x803B7E4C end:0x803B7E50
+
+FriendlyControl.cpp:
+	.text       start:0x80097DD8 end:0x800985D0
+	.ctors      start:0x803B7AD0 end:0x803B7AD4
+	.dtors      start:0x803B7E50 end:0x803B7E54
+
+CareTaker_C01A.cpp:
+	.text       start:0x800985D0 end:0x80099A94
+	.ctors      start:0x803B7AD4 end:0x803B7AD8
+	.dtors      start:0x803B7E54 end:0x803B7E58
+
+CareTaker_C02A.cpp:
+	.text       start:0x80099A94 end:0x8009B424
+	.ctors      start:0x803B7AD8 end:0x803B7ADC
+	.dtors      start:0x803B7E58 end:0x803B7E5C
+
+CareTaker_C03A.cpp:
+	.text       start:0x8009B424 end:0x8009BE50
+	.ctors      start:0x803B7ADC end:0x803B7AE0
+	.dtors      start:0x803B7E5C end:0x803B7E60
+
+CareTaker_C03B.cpp:
+	.text       start:0x8009BE50 end:0x8009C2E0
+	.ctors      start:0x803B7AE0 end:0x803B7AE4
+	.dtors      start:0x803B7E60 end:0x803B7E64
+
+CareTaker_C03C.cpp:
+	.text       start:0x8009C2E0 end:0x8009C644
+	.ctors      start:0x803B7AE4 end:0x803B7AE8
+	.dtors      start:0x803B7E64 end:0x803B7E68
+
+CareTaker_C04B.cpp:
+	.text       start:0x8009C644 end:0x8009CE58
+	.ctors      start:0x803B7AE8 end:0x803B7AEC
+	.dtors      start:0x803B7E68 end:0x803B7E6C
+
+CareTaker_C05A.cpp:
+	.text       start:0x8009CE58 end:0x8009D7FC
+	.ctors      start:0x803B7AEC end:0x803B7AF0
+	.dtors      start:0x803B7E6C end:0x803B7E70
+
+CareTaker_C08C.cpp:
+	.text       start:0x8009D7FC end:0x8009DD60
+	.ctors      start:0x803B7AF0 end:0x803B7AF4
+	.dtors      start:0x803B7E70 end:0x803B7E74
+
+CareTaker_C08D.cpp:
+	.text       start:0x8009DD60 end:0x8009E2C4
+	.ctors      start:0x803B7AF4 end:0x803B7AF8
+	.dtors      start:0x803B7E74 end:0x803B7E78
+
+camerabox.cpp:
+	.text       start:0x8009E2C4 end:0x8009E800
+	.ctors      start:0x803B7AF8 end:0x803B7AFC
+	.dtors      start:0x803B7E78 end:0x803B7E7C
+
+CamHelper.cpp:
+	.text       start:0x8009E800 end:0x800A64B4
+	.ctors      start:0x803B7AFC end:0x803B7B00
+	.dtors      start:0x803B7E7C end:0x803B7E80
+
+FFCamera1.cpp:
+	.text       start:0x800A7EF0 end:0x800AB184
+	.ctors      start:0x803B7B04 end:0x803B7B08
+	.dtors      start:0x803B7E84 end:0x803B7E88
+	.sdata      start:0x805AAA08 end:0x805AAA34
+
+fftargelist.cpp:
+	.text       start:0x800AB690 end:0x800AB9CC
+	.ctors      start:0x803B7B08 end:0x803B7B0C
+	.dtors      start:0x803B7E88 end:0x803B7E8C
+
+ShakeCamera.cpp:
+	.text       start:0x800AB9CC end:0x800AC30C
+	.ctors      start:0x803B7B0C end:0x803B7B10
+	.dtors      start:0x803B7E8C end:0x803B7E90
+
+MP_CheckInsideHill.cpp:
+	.text       start:0x800AC30C end:0x800ACFD4
+	.ctors      start:0x803B7B10 end:0x803B7B14
+	.dtors      start:0x803B7E90 end:0x803B7E94
+
+MP_GameController.cpp:
+	.text       start:0x800ACFD4 end:0x800AF544
+	.ctors      start:0x803B7B14 end:0x803B7B18
+	.dtors      start:0x803B7E94 end:0x803B7E98
+	.sdata      start:0x805AAA34 end:0x805AAA40
+
+ZFFItemBomb.cpp:
+	.text       start:0x800B0134 end:0x800B0F54
+	.ctors      start:0x803B7B1C end:0x803B7B20
+	.dtors      start:0x803B7E9C end:0x803B7EA0
+
+InventoryBinding.cpp:
+	.text       start:0x800B0F54 end:0x800B13D0
+	.ctors      start:0x803B7B20 end:0x803B7B24
+	.dtors      start:0x803B7EA0 end:0x803B7EA4
+
+InventoryBridge.cpp:
+	.text       start:0x800B13D0 end:0x800B22E4
+
+InventoryController.cpp:
+	.text       start:0x800B22E4 end:0x800B27A8
+
+InventoryInfo.cpp:
+	.text       start:0x800B27A8 end:0x800B2EC8
+
+BoxAutoFire.cpp:
+	.text       start:0x800B2EC8 end:0x800B36C0
+	.ctors      start:0x803B7B24 end:0x803B7B28
+	.dtors      start:0x803B7EA4 end:0x803B7EA8
+
+CharFader.cpp:
+	.text       start:0x800B36C0 end:0x800B4058
+	.ctors      start:0x803B7B28 end:0x803B7B2C
+	.dtors      start:0x803B7EA8 end:0x803B7EAC
+
+Credits.cpp:
+	.text       start:0x800B4058 end:0x800B4904
+	.ctors      start:0x803B7B2C end:0x803B7B30
+	.dtors      start:0x803B7EAC end:0x803B7EB0
+
+FadeToBlack.cpp:
+	.text       start:0x800B4904 end:0x800B5198
+	.ctors      start:0x803B7B30 end:0x803B7B34
+	.dtors      start:0x803B7EB0 end:0x803B7EB4
+
+FilmGrainCamSetup.cpp:
+	.text       start:0x800B5198 end:0x800B55A8
+	.ctors      start:0x803B7B34 end:0x803B7B38
+	.dtors      start:0x803B7EB4 end:0x803B7EB8
+
+GrapSlides.cpp:
+	.text       start:0x800B55A8 end:0x800B5924
+	.ctors      start:0x803B7B38 end:0x803B7B3C
+	.dtors      start:0x803B7EB8 end:0x803B7EBC
+
+LensFlare.cpp:
+	.text       start:0x800B5924 end:0x800B612C
+	.ctors      start:0x803B7B3C end:0x803B7B40
+	.dtors      start:0x803B7EBC end:0x803B7EC0
+
+LensFlareControl.cpp:
+	.text       start:0x800B612C end:0x800B6EC4
+	.ctors      start:0x803B7B40 end:0x803B7B44
+	.dtors      start:0x803B7EC0 end:0x803B7EC4
+
+LensFlareLights.cpp:
+	.text       start:0x800B6EC4 end:0x800B7420
+	.ctors      start:0x803B7B44 end:0x803B7B48
+	.dtors      start:0x803B7EC4 end:0x803B7EC8
+
+LogoFade.cpp:
+	.text       start:0x800B7420 end:0x800B7DB4
+	.ctors      start:0x803B7B48 end:0x803B7B4C
+	.dtors      start:0x803B7EC8 end:0x803B7ECC
+
+MovieControl.cpp:
+	.text       start:0x800B7DB4 end:0x800B92A4
+	.ctors      start:0x803B7B4C end:0x803B7B50
+	.dtors      start:0x803B7ECC end:0x803B7ED0
+
+RunCutsequence.cpp:
+	.text       start:0x800B92A4 end:0x800B9B18
+	.ctors      start:0x803B7B50 end:0x803B7B54
+	.dtors      start:0x803B7ED0 end:0x803B7ED4
+
+scrolltext.cpp:
+	.text       start:0x800B9B18 end:0x800B9F88
+	.ctors      start:0x803B7B54 end:0x803B7B58
+	.dtors      start:0x803B7ED4 end:0x803B7ED8
+
+TimeBender.cpp:
+	.text       start:0x800B9F88 end:0x800BA3C0
+	.ctors      start:0x803B7B58 end:0x803B7B5C
+	.dtors      start:0x803B7ED8 end:0x803B7EDC
+
+TVNoise.cpp:
+	.text       start:0x800BA3C0 end:0x800BAF9C
+	.ctors      start:0x803B7B5C end:0x803B7B60
+	.dtors      start:0x803B7EDC end:0x803B7EE0
+
+TVOnOff.cpp:
+	.text       start:0x800BAF9C end:0x800BB828
+	.ctors      start:0x803B7B60 end:0x803B7B64
+	.dtors      start:0x803B7EE0 end:0x803B7EE4
+
+TVOSDCamControl.cpp:
+	.text       start:0x800BB828 end:0x800BC994
+	.ctors      start:0x803B7B64 end:0x803B7B68
+	.dtors      start:0x803B7EE4 end:0x803B7EE8
+
+TVStudioCam.cpp:
+	.text       start:0x800BC994 end:0x800BD47C
+	.ctors      start:0x803B7B68 end:0x803B7B6C
+	.dtors      start:0x803B7EE8 end:0x803B7EEC
+
+Clues.cpp:
+	.text       start:0x800BD47C end:0x800BDD84
+
+PlayerInventory.cpp:
+	.text       start:0x800BDD84 end:0x800BE87C
+
+PlayerProfile.cpp:
+	.text       start:0x800BE87C end:0x800C08B0
+
+PlayerStats.cpp:
+	.text       start:0x800C08B0 end:0x800C1E24
+
+SaveMissions.cpp:
+	.text       start:0x800C1E24 end:0x800C318C
+
+SewerControl.cpp:
+	.text       start:0x800C318C end:0x800C3778
+
+ActionControlMap.cpp:
+	.text       start:0x800C3778 end:0x800C82C0
+	.ctors      start:0x803B7B6C end:0x803B7B70
+	.dtors      start:0x803B7EEC end:0x803B7EF0
+	.sdata      start:0x805AAA40 end:0x805AAA64
+
+ModeControl_DebugInfo.cpp:
+	.text       start:0x800C82C0 end:0x800C8804
+
+ModeControl_IngameOptions.cpp:
+	.text       start:0x800C8804 end:0x800C8A58
+
+ModeControl_Map.cpp:
+	.text       start:0x800C8A58 end:0x800C8DE4
+
+Cage.cpp:
+	.text       start:0x800C8DE4 end:0x800C9320
+	.ctors      start:0x803B7B70 end:0x803B7B74
+	.dtors      start:0x803B7EF0 end:0x803B7EF4
+
+Center.cpp:
+	.text       start:0x800C9320 end:0x800C9744
+	.ctors      start:0x803B7B74 end:0x803B7B78
+	.dtors      start:0x803B7EF4 end:0x803B7EF8
+
+CharacterControl.cpp:
+	.text       start:0x800C9744 end:0x800C9FB4
+	.ctors      start:0x803B7B78 end:0x803B7B7C
+	.dtors      start:0x803B7EF8 end:0x803B7EFC
+
+CheckInsideByType.cpp:
+	.text       start:0x800C9FB4 end:0x800CAA24
+	.ctors      start:0x803B7B7C end:0x803B7B80
+	.dtors      start:0x803B7EFC end:0x803B7F00
+
+CivilianPath.cpp:
+	.text       start:0x800CAA24 end:0x800CAE68
+	.ctors      start:0x803B7B80 end:0x803B7B84
+	.dtors      start:0x803B7F00 end:0x803B7F04
+
+CivilianPathList.cpp:
+	.text       start:0x800CAE68 end:0x800CC878
+	.ctors      start:0x803B7B84 end:0x803B7B88
+	.dtors      start:0x803B7F04 end:0x803B7F08
+
+DamageBox.cpp:
+	.text       start:0x800CC878 end:0x800CD3E0
+	.ctors      start:0x803B7B88 end:0x803B7B8C
+	.dtors      start:0x803B7F08 end:0x803B7F0C
+
+Damagebox2.cpp:
+	.text       start:0x800CD3E0 end:0x800CDFCC
+	.ctors      start:0x803B7B8C end:0x803B7B90
+	.dtors      start:0x803B7F0C end:0x803B7F10
+
+EntityTracker.cpp:
+	.text       start:0x800CDFCC end:0x800CF68C
+	.ctors      start:0x803B7B90 end:0x803B7B94
+	.dtors      start:0x803B7F10 end:0x803B7F14
+
+Explode.cpp:
+	.text       start:0x800CF68C end:0x800D4A20
+	.ctors      start:0x803B7B94 end:0x803B7B98
+	.dtors      start:0x803B7F14 end:0x803B7F18
+	.sdata      start:0x805AAA64 end:0x805AAA6C
+
+fencegate.cpp:
+	.text       start:0x800D4A20 end:0x800D5428
+	.ctors      start:0x803B7B98 end:0x803B7B9C
+	.dtors      start:0x803B7F18 end:0x803B7F1C
+
+ffcoverlist.cpp:
+	.text       start:0x800D5428 end:0x800D87B0
+	.ctors      start:0x803B7B9C end:0x803B7BA0
+	.dtors      start:0x803B7F1C end:0x803B7F20
+	.sdata      start:0x805AAA6C end:0x805AAA88
+	.sbss       start:0x805ABD08 end:0x805ABD28
+
+FFShowMessage.cpp:
+	.text       start:0x800D87B0 end:0x800D8C14
+	.ctors      start:0x803B7BA0 end:0x803B7BA4
+	.dtors      start:0x803B7F20 end:0x803B7F24
+
+FlagRaised.cpp:
+	.text       start:0x800D8C14 end:0x800DAD44
+	.ctors      start:0x803B7BA4 end:0x803B7BA8
+	.dtors      start:0x803B7F24 end:0x803B7F28
+
+FogController.cpp:
+	.text       start:0x800DAD44 end:0x800DBBE0
+	.ctors      start:0x803B7BA8 end:0x803B7BAC
+	.dtors      start:0x803B7F28 end:0x803B7F2C
+
+gameentity.cpp:
+	.text       start:0x800DBBE0 end:0x800DC018
+
+ImpactFog.cpp:
+	.text       start:0x800DC018 end:0x800DC500
+	.ctors      start:0x803B7BAC end:0x803B7BB0
+	.dtors      start:0x803B7F2C end:0x803B7F30
+
+ImpactResponse.cpp:
+	.text       start:0x800DC500 end:0x800DCC48
+	.ctors      start:0x803B7BB0 end:0x803B7BB4
+	.dtors      start:0x803B7F30 end:0x803B7F34
+
+KillBox.cpp:
+	.text       start:0x800DCC48 end:0x800DD9E0
+	.ctors      start:0x803B7BB4 end:0x803B7BB8
+	.dtors      start:0x803B7F34 end:0x803B7F38
+
+LevelController.cpp:
+	.text       start:0x800DD9E0 end:0x800E0FD4
+	.ctors      start:0x803B7BB8 end:0x803B7BBC
+	.dtors      start:0x803B7F38 end:0x803B7F3C
+
+LightToggle.cpp:
+	.text       start:0x800E0FD4 end:0x800E1CF0
+	.ctors      start:0x803B7BBC end:0x803B7BC0
+	.dtors      start:0x803B7F3C end:0x803B7F40
+
+logicoperatorevaluatortriggerfunctions.cpp:
+	.text       start:0x800E1CF0 end:0x800E2610
+	.ctors      start:0x803B7BC0 end:0x803B7BC4
+	.dtors      start:0x803B7F40 end:0x803B7F44
+
+MachinegunControlGroup.cpp:
+	.text       start:0x800E2610 end:0x800E427C
+	.ctors      start:0x803B7BC4 end:0x803B7BC8
+	.dtors      start:0x803B7F44 end:0x803B7F48
+
+OpenSewer.cpp:
+	.text       start:0x800E427C end:0x800E4A74
+	.ctors      start:0x803B7BC8 end:0x803B7BCC
+	.dtors      start:0x803B7F48 end:0x803B7F4C
+
+OpenWindow.cpp:
+	.text       start:0x800E4A74 end:0x800E4F3C
+	.ctors      start:0x803B7BCC end:0x803B7BD0
+	.dtors      start:0x803B7F4C end:0x803B7F50
+
+RepositionCharacter.cpp:
+	.text       start:0x800E4F3C end:0x800E5858
+	.ctors      start:0x803B7BD0 end:0x803B7BD4
+	.dtors      start:0x803B7F50 end:0x803B7F54
+
+RoadDebris.cpp:
+	.text       start:0x800E5858 end:0x800E6A6C
+	.ctors      start:0x803B7BD4 end:0x803B7BD8
+	.dtors      start:0x803B7F54 end:0x803B7F58
+
+targetobtained.cpp:
+	.text       start:0x800E6A6C end:0x800E7514
+	.ctors      start:0x803B7BD8 end:0x803B7BDC
+	.dtors      start:0x803B7F58 end:0x803B7F5C
+
+timerevent.cpp:
+	.text       start:0x800E7514 end:0x800E78B4
+	.ctors      start:0x803B7BDC end:0x803B7BE0
+	.dtors      start:0x803B7F5C end:0x803B7F60
+
+WindowCoordinator.cpp:
+	.text       start:0x800E78B4 end:0x800E7EF4
+
+zbombdamagelist.cpp:
+	.text       start:0x800E7EF4 end:0x800E84D8
+	.ctors      start:0x803B7BE0 end:0x803B7BE4
+	.dtors      start:0x803B7F60 end:0x803B7F64
+
+ZFFFlak.cpp:
+	.text       start:0x800E84D8 end:0x800E938C
+	.ctors      start:0x803B7BE4 end:0x803B7BE8
+	.dtors      start:0x803B7F64 end:0x803B7F68
+
+zffgamedata.cpp:
+	.text       start:0x800E938C end:0x800EB634
+	.ctors      start:0x803B7BE8 end:0x803B7BEC
+
+ZFFMortar.cpp:
+	.text       start:0x800EB634 end:0x800EBFC0
+	.ctors      start:0x803B7BEC end:0x803B7BF0
+	.dtors      start:0x803B7F68 end:0x803B7F6C
+
+ZFFSearchLightAddActors.cpp:
+	.text       start:0x800EBFC0 end:0x800EC570
+	.ctors      start:0x803B7BF0 end:0x803B7BF4
+	.dtors      start:0x803B7F6C end:0x803B7F70
+
+ZFFSearchLightGroup.cpp:
+	.text       start:0x800EC570 end:0x800EEF0C
+	.ctors      start:0x803B7BF4 end:0x803B7BF8
+	.dtors      start:0x803B7F70 end:0x803B7F74
+
+ZFootstepVolume.cpp:
+	.text       start:0x800EEF0C end:0x800EF270
+	.ctors      start:0x803B7BF8 end:0x803B7BFC
+	.dtors      start:0x803B7F74 end:0x803B7F78
+
+CoverSpot.cpp:
+	.text       start:0x800EF270 end:0x800EFEDC
+
+Reservable.cpp:
+	.text       start:0x800EFEDC end:0x800F01E4
+
+Sprite2D.cpp:
+	.text       start:0x800F01E4 end:0x800F1318
+	.sdata      start:0x805AAA88 end:0x805AAA8C
+
+Sprite3D.cpp:
+	.text       start:0x800F1318 end:0x800F2220
+
+SpriteBorder2D.cpp:
+	.text       start:0x800F2220 end:0x800F2C3C
+
+SpriteDivide2D.cpp:
+	.text       start:0x800F2C3C end:0x800F2F48
+
+GameOSD_Hint.cpp:
+	.text       start:0x800F2F48 end:0x800F32AC
+
+MessageBasics.cpp:
+	.text       start:0x800F32AC end:0x800F5610
+	.sdata      start:0x805AAA8C end:0x805AAA94
+
+MessageBomb.cpp:
+	.text       start:0x800F5610 end:0x800F5D44
+
+MessageDialog.cpp:
+	.text       start:0x800F5D44 end:0x800F6E8C
+
+MessageHint.cpp:
+	.text       start:0x800F6E8C end:0x800F724C
+
+MessageTextBox.cpp:
+	.text       start:0x800F724C end:0x800F8560
+	.sdata      start:0x805AAA94 end:0x805AAAA8
+
+MessageTrailer.cpp:
+	.text       start:0x800F8560 end:0x800F8DB0
+
+statequeue.cpp:
+	.text       start:0x800F8DB0 end:0x800F8E7C
+
+Buffer.cpp:
+	.text       start:0x800F8E7C end:0x800F91CC
+
+SaveDeviceGC.cpp:
+	.text       start:0x800F91CC end:0x800F9FB0
+
+__ffguilink.cpp:
+	.text       start:0x800F9FB0 end:0x800FA4B8
+
+AutoSaveOption.cpp:
+	.text       start:0x800FA4B8 end:0x800FAB80
+	.ctors      start:0x803B7BFC end:0x803B7C00
+	.dtors      start:0x803B7F78 end:0x803B7F7C
+
+BaseMap.cpp:
+	.text       start:0x800FAB80 end:0x800FC7C4
+	.ctors      start:0x803B7C00 end:0x803B7C04
+	.dtors      start:0x803B7F7C end:0x803B7F80
+
+BaseWindow.cpp:
+	.text       start:0x800FC7C4 end:0x801012C0
+	.ctors      start:0x803B7C04 end:0x803B7C08
+	.dtors      start:0x803B7F80 end:0x803B7F84
+
+BootMenu.cpp:
+	.text       start:0x801012C0 end:0x801019EC
+	.ctors      start:0x803B7C08 end:0x803B7C0C
+	.dtors      start:0x803B7F84 end:0x803B7F88
+
+Briefing.cpp:
+	.text       start:0x801019EC end:0x80102FF0
+	.ctors      start:0x803B7C0C end:0x803B7C10
+	.dtors      start:0x803B7F88 end:0x803B7F8C
+
+Controller.cpp:
+	.text       start:0x80102FF0 end:0x80103F6C
+	.ctors      start:0x803B7C10 end:0x803B7C14
+	.dtors      start:0x803B7F8C end:0x803B7F90
+
+ControllerA.cpp:
+	.text       start:0x80103F6C end:0x801058AC
+	.ctors      start:0x803B7C14 end:0x803B7C18
+	.dtors      start:0x803B7F90 end:0x803B7F94
+
+CutSequenceMenu.cpp:
+	.text       start:0x801058AC end:0x80105F5C
+	.ctors      start:0x803B7C18 end:0x803B7C1C
+	.dtors      start:0x803B7F94 end:0x803B7F98
+
+DemoMenu.cpp:
+	.text       start:0x80105F5C end:0x8010657C
+	.ctors      start:0x803B7C1C end:0x803B7C20
+	.dtors      start:0x803B7F98 end:0x803B7F9C
+
+FileCommand.cpp:
+	.text       start:0x8010657C end:0x8010682C
+
+FileWindow.cpp:
+	.text       start:0x8010682C end:0x801084F4
+
+InventorySelector.cpp:
+	.text       start:0x801084F4 end:0x8010AA8C
+	.ctors      start:0x803B7C20 end:0x803B7C24
+	.dtors      start:0x803B7F9C end:0x803B7FA0
+
+LevelMenuSinglePlayer.cpp:
+	.text       start:0x8010AA8C end:0x8010B08C
+	.ctors      start:0x803B7C24 end:0x803B7C28
+	.dtors      start:0x803B7FA0 end:0x803B7FA4
+
+LinkMenu.cpp:
+	.text       start:0x8010B08C end:0x8010CE78
+	.ctors      start:0x803B7C28 end:0x803B7C2C
+	.dtors      start:0x803B7FA4 end:0x803B7FA8
+
+Loader.cpp:
+	.text       start:0x8010CE78 end:0x8010D740
+	.ctors      start:0x803B7C2C end:0x803B7C30
+	.dtors      start:0x803B7FA8 end:0x803B7FAC
+
+LoadError.cpp:
+	.text       start:0x8010D740 end:0x8010DC20
+	.ctors      start:0x803B7C30 end:0x803B7C34
+	.dtors      start:0x803B7FAC end:0x803B7FB0
+
+LoadMenu.cpp:
+	.text       start:0x8010DC20 end:0x8010FDD4
+	.ctors      start:0x803B7C34 end:0x803B7C38
+	.dtors      start:0x803B7FB0 end:0x803B7FB4
+
+MissingControllerDialog.cpp:
+	.text       start:0x8010FDD4 end:0x80110898
+	.ctors      start:0x803B7C38 end:0x803B7C3C
+	.dtors      start:0x803B7FB4 end:0x803B7FB8
+
+MultiplayerKOTH.cpp:
+	.text       start:0x80110898 end:0x80112290
+	.ctors      start:0x803B7C3C end:0x803B7C40
+	.dtors      start:0x803B7FB8 end:0x803B7FBC
+
+MultiplayerStat.cpp:
+	.text       start:0x80112290 end:0x801137D4
+	.ctors      start:0x803B7C40 end:0x803B7C44
+	.dtors      start:0x803B7FBC end:0x803B7FC0
+	.sdata      start:0x805AAAA8 end:0x805AAAB0
+
+NewMenu.cpp:
+	.text       start:0x801137D4 end:0x801153B8
+	.ctors      start:0x803B7C44 end:0x803B7C48
+	.dtors      start:0x803B7FC0 end:0x803B7FC4
+
+Objectives.cpp:
+	.text       start:0x801153B8 end:0x8011664C
+	.ctors      start:0x803B7C48 end:0x803B7C4C
+	.dtors      start:0x803B7FC4 end:0x803B7FC8
+
+SetStartZone.cpp:
+	.text       start:0x8011664C end:0x80116AE8
+	.ctors      start:0x803B7C4C end:0x803B7C50
+	.dtors      start:0x803B7FC8 end:0x803B7FCC
+
+SewerMenu.cpp:
+	.text       start:0x80116AE8 end:0x80118CE4
+	.ctors      start:0x803B7C50 end:0x803B7C54
+	.dtors      start:0x803B7FCC end:0x803B7FD0
+
+SoundMenu.cpp:
+	.text       start:0x80118CE4 end:0x80119AE0
+	.ctors      start:0x803B7C54 end:0x803B7C58
+	.dtors      start:0x803B7FD0 end:0x803B7FD4
+
+Subtitle.cpp:
+	.text       start:0x80119AE0 end:0x8011AC10
+	.ctors      start:0x803B7C58 end:0x803B7C5C
+	.dtors      start:0x803B7FD4 end:0x803B7FD8
+
+SubZoneMap.cpp:
+	.text       start:0x8011AC10 end:0x8011C8EC
+	.ctors      start:0x803B7C5C end:0x803B7C60
+	.dtors      start:0x803B7FD8 end:0x803B7FDC
+
+VideoSelector.cpp:
+	.text       start:0x8011C8EC end:0x8011D264
+	.ctors      start:0x803B7C60 end:0x803B7C64
+	.dtors      start:0x803B7FDC end:0x803B7FE0
+
+WaterMark.cpp:
+	.text       start:0x8011D264 end:0x8011D838
+	.ctors      start:0x803B7C64 end:0x803B7C68
+	.dtors      start:0x803B7FE0 end:0x803B7FE4
+
+ZoneMap.cpp:
+	.text       start:0x8011D838 end:0x8011EB48
+	.ctors      start:0x803B7C68 end:0x803B7C6C
+	.dtors      start:0x803B7FE4 end:0x803B7FE8
+
+ZoneMenu.cpp:
+	.text       start:0x8011EB48 end:0x8011F650
+	.ctors      start:0x803B7C6C end:0x803B7C70
+	.dtors      start:0x803B7FE8 end:0x803B7FEC
+
+ffscriptfactory.cpp:
+	.text       start:0x8011F650 end:0x801223E8
+	.sdata      start:0x805AAAB0 end:0x805AAAB8
+
+ffactor_if.cpp:
+	.text       start:0x801223E8 end:0x8013163C
+	.sdata      start:0x805AAAB8 end:0x805AAAC8
+
+ffhero_if.cpp:
+	.text       start:0x8013163C end:0x80132B68
+	.sdata      start:0x805AAAC8 end:0x805AAACC
+
+ffmpgamecontrol_if.cpp:
+	.text       start:0x80132B68 end:0x80134758
+	.sdata      start:0x805AAACC end:0x805AAAE4
+
+fftools_if.cpp:
+	.text       start:0x80134758 end:0x80145860
+	.sdata      start:0x805AAAE4 end:0x805AAAF0
+
+ff_event_translators.cpp:
+	.text       start:0x80145860 end:0x8014B274
+
+zmovement.cpp:
+	.text       start:0x8014B274 end:0x8014E9A8
+
+zplayer.cpp:
+	.text       start:0x8014E9A8 end:0x80154FBC
+	.ctors      start:0x803B7C70 end:0x803B7C74
+	.dtors      start:0x803B7FEC end:0x803B7FF0
+	.sdata      start:0x805AAAF0 end:0x805AAB2C
+
+baseevent.cpp:
+	.text       start:0x80154FBC end:0x80155BDC
+
+basicshape.cpp:
+	.text       start:0x80155BDC end:0x80156824
+
+parametriccurve.cpp:
+	.text       start:0x80156824 end:0x80157A58
+
+zcamera.cpp:
+	.text       start:0x80157A58 end:0x80159FC4
+	.ctors      start:0x803B7C74 end:0x803B7C78
+	.dtors      start:0x803B7FF0 end:0x803B7FF4
+	.sdata      start:0x805AAB2C end:0x805AAB3C
+
+zgeom.cpp:
+	.text       start:0x80159FC4 end:0x8015F4B0
+	.ctors      start:0x803B7C78 end:0x803B7C7C
+	.dtors      start:0x803B7FF4 end:0x803B7FF8
+
+zgroup.cpp:
+	.text       start:0x8015F4B0 end:0x801636EC
+	.ctors      start:0x803B7C7C end:0x803B7C80
+	.dtors      start:0x803B7FF8 end:0x803B7FFC
+
+zparticle.cpp:
+	.text       start:0x801636EC end:0x80165AE8
+	.ctors      start:0x803B7C80 end:0x803B7C84
+	.dtors      start:0x803B7FFC end:0x803B8000
+	.sdata      start:0x805AAB3C end:0x805AAB4C
+
+zroom.cpp:
+	.text       start:0x80165AE8 end:0x801677C8
+	.ctors      start:0x803B7C84 end:0x803B7C88
+	.dtors      start:0x803B8000 end:0x803B8004
+	.sbss       start:0x805ABD28 end:0x805ABD2C
+
+zshape.cpp:
+	.text       start:0x801677C8 end:0x80168A04
+	.ctors      start:0x803B7C88 end:0x803B7C8C
+	.dtors      start:0x803B8004 end:0x803B8008
+
+zsndobj.cpp:
+	.text       start:0x80168A04 end:0x8016A7DC
+	.ctors      start:0x803B7C8C end:0x803B7C90
+	.dtors      start:0x803B8008 end:0x803B800C
+
+zstdobj.cpp:
+	.text       start:0x8016A7DC end:0x8016AD04
+	.ctors      start:0x803B7C90 end:0x803B7C94
+	.dtors      start:0x803B800C end:0x803B8010
+
+ztreegroup.cpp:
+	.text       start:0x8016AD04 end:0x8016DC1C
+	.ctors      start:0x803B7C94 end:0x803B7C98
+	.dtors      start:0x803B8010 end:0x803B8014
+	.sdata      start:0x805AAB4C end:0x805AAB5C
+
+zdrawdebugroom.cpp:
+	.text       start:0x8016DC1C end:0x8016E2C0
+
+zdebuggeom.cpp:
+	.text       start:0x8016E2C0 end:0x80170204
+	.ctors      start:0x803B7C98 end:0x803B7C9C
+	.dtors      start:0x803B8014 end:0x803B8018
+
+zactor.cpp:
+	.text       start:0x80170204 end:0x8017B5A4
+	.ctors      start:0x803B7C9C end:0x803B7CA0
+	.dtors      start:0x803B8018 end:0x803B801C
+	.rodata     start:0x803F0A04 end:0x803F59A0
+	.sdata      start:0x805AAB5C end:0x805AAC28
+
+zctrliklnkobj.cpp:
+	.text       start:0x8017B5A4 end:0x8017B9EC
+	.ctors      start:0x803B7CA0 end:0x803B7CA4
+	.dtors      start:0x803B801C end:0x803B8020
+
+ziklnkobj.cpp:
+	.text       start:0x8017B9EC end:0x8017F1C8
+	.ctors      start:0x803B7CA4 end:0x803B7CA8
+	.dtors      start:0x803B8020 end:0x803B8024
+
+ziklnkobjactions.cpp:
+	.text       start:0x8017F1C8 end:0x8017F570
+
+zlnkobj.cpp:
+	.text       start:0x8017F570 end:0x801877D8
+	.ctors      start:0x803B7CA8 end:0x803B7CAC
+	.dtors      start:0x803B8024 end:0x803B8028
+
+zlnkwhands.cpp:
+	.text       start:0x801877D8 end:0x8018D760
+	.ctors      start:0x803B7CAC end:0x803B7CB0
+	.dtors      start:0x803B8028 end:0x803B802C
+
+zlnkwhandsactions.cpp:
+	.text       start:0x8018D760 end:0x8018FB4C
+
+zpathfinderblocker.cpp:
+	.text       start:0x8018FB4C end:0x801903F0
+
+classinfo.cpp:
+	.text       start:0x801903F0 end:0x80190578
+
+zpathfinder3.cpp:
+	.text       start:0x80190578 end:0x80194000
+	.ctors      start:0x803B7CB0 end:0x803B7CB4
+	.dtors      start:0x803B802C end:0x803B8030
+	.sdata      start:0x805AAC28 end:0x805AAC30
+
+zpfoctreepacked.cpp:
+	.text       start:0x80194000 end:0x8019C8B8
+	.sdata      start:0x805AAC30 end:0x805AAC5C
+
+pfdebug.cpp:
+	.text       start:0x8019C8B8 end:0x8019DB68
+	.ctors      start:0x803B7CB4 end:0x803B7CB8
+	.dtors      start:0x803B8030 end:0x803B8034
+
+timeslicing.cpp:
+	.text       start:0x8019DB68 end:0x8019DCCC
+
+std_event_translator.cpp:
+	.text       start:0x8019DCCC end:0x8019F730
+	.data       start:0x804336C0 end:0x80433718
+
+actor_if.cpp:
+	.text       start:0x8019F730 end:0x801A5C48
+	.bss        start:0x8052A8F4 end:0x8052AA9C
+	.sdata      start:0x805AAC5C end:0x805AAC60
+
+tracklink_if.cpp:
+	.text       start:0x801A5C48 end:0x801A9820
+	.bss        start:0x8052AA9C end:0x8052AC38
+	.sdata      start:0x805AAC60 end:0x805AAC6C
+
+zgeom_if.cpp:
+	.text       start:0x801A9820 end:0x801B1CA8
+	.bss        start:0x8052AC38 end:0x8052AE18
+	.sdata      start:0x805AAC6C end:0x805AAC70
+	.sbss       start:0x805ABD2C end:0x805ABD60
+
+opaquetype.cpp:
+	.text       start:0x801B1CA8 end:0x801B2F34
+	.sdata      start:0x805AAC70 end:0x805AAC80
+
+runtime_signature.cpp:
+	.text       start:0x801B2F34 end:0x801B3D0C
+
+runtime_typelib.cpp:
+	.text       start:0x801B3D0C end:0x801B66B8
+
+scriptengine.cpp:
+	.text       start:0x801B66B8 end:0x801BA5FC
+	.sdata      start:0x805AAC80 end:0x805AAC94
+
+scriptvm.cpp:
+	.text       start:0x801BA5FC end:0x801C8D14
+
+sdl_eventnames.cpp:
+	.text       start:0x801C8D14 end:0x801C9270
+	.rodata     start:0x803F59A0 end:0x803FE238
+
+vm_image_info.cpp:
+	.text       start:0x801C9270 end:0x801CCF60
+	.sdata      start:0x805AAC94 end:0x805AACA8
+
+native_method_data.cpp:
+	.text       start:0x801CCF60 end:0x801CD0B4
+
+ppo.cpp:
+	.text       start:0x801CD0B4 end:0x801CDA58
+
+sdl_extendtypes.cpp:
+	.text       start:0x801CDA58 end:0x801CDCC4
+
+sdl_types.cpp:
+	.text       start:0x801CDCC4 end:0x801CE074
+
+serialize.cpp:
+	.text       start:0x801CE074 end:0x801CE890
+
+hostinterface.cpp:
+	.text       start:0x801CE890 end:0x801CE8EC
+
+md5.cpp:
+	.text       start:0x801CE8EC end:0x801CF50C
+	.data       start:0x80433718 end:0x80433CF0
+
+car_if.cpp:
+	.text       start:0x801CF50C end:0x801D0690
+	.sdata      start:0x805AACA8 end:0x805AACB0
+
+heli_if.cpp:
+	.text       start:0x801D0690 end:0x801D1E8C
+	.sdata      start:0x805AACB0 end:0x805AACB8
+
+moveonspline_if.cpp:
+	.text       start:0x801D1E8C end:0x801D4E50
+	.sdata      start:0x805AACB8 end:0x805AACC0
+
+pmv_if.cpp:
+	.text       start:0x801D4E50 end:0x801D570C
+	.sdata      start:0x805AACC0 end:0x805AACC8
+
+tank_if.cpp:
+	.text       start:0x801D570C end:0x801D6760
+	.sdata      start:0x805AACC8 end:0x805AACD0
+
+vehicle_if.cpp:
+	.text       start:0x801D6760 end:0x801D7178
+	.sdata      start:0x805AACD0 end:0x805AACD8
+
+heli.cpp:
+	.text       start:0x801D7178 end:0x801DA77C
+	.ctors      start:0x803B7CB8 end:0x803B7CBC
+	.dtors      start:0x803B8034 end:0x803B8038
+	.sdata      start:0x805AACD8 end:0x805AACE0
+
+moveonspline.cpp:
+	.text       start:0x801DA77C end:0x801DE70C
+	.ctors      start:0x803B7CBC end:0x803B7CC0
+	.dtors      start:0x803B8038 end:0x803B803C
+	.sdata      start:0x805AACE0 end:0x805AACE8
+
+tank.cpp:
+	.text       start:0x801DE70C end:0x801E1330
+	.ctors      start:0x803B7CC0 end:0x803B7CC4
+	.dtors      start:0x803B803C end:0x803B8040
+	.sdata      start:0x805AACE8 end:0x805AACEC
+
+undercarriagetank.cpp:
+	.text       start:0x801E1330 end:0x801E3D40
+	.sdata      start:0x805AACEC end:0x805AACF0
+
+vehicle.cpp:
+	.text       start:0x801E3D40 end:0x801E5678
+	.ctors      start:0x803B7CC4 end:0x803B7CC8
+	.dtors      start:0x803B8040 end:0x803B8044
+	.sdata      start:0x805AACF0 end:0x805AACF8
+
+wheel.cpp:
+	.text       start:0x801E5678 end:0x801E64A0
+
+AccelPullVal.cpp:
+	.text       start:0x801E64A0 end:0x801E6CA8
+
+EaseInEaseOut.cpp:
+	.text       start:0x801E6CA8 end:0x801E7368
+
+movealongpath.cpp:
+	.text       start:0x801E7368 end:0x801E8EBC
+	.sdata      start:0x805AACF8 end:0x805AAD00
+
+PosEaseInEaseOut.cpp:
+	.text       start:0x801E8EBC end:0x801E9364
+
+PullToValueAccel.cpp:
+	.text       start:0x801E9364 end:0x801E9A20
+
+VangEaseInEaseOut.cpp:
+	.text       start:0x801E9A20 end:0x801E9EBC
+
+VangPullAccel.cpp:
+	.text       start:0x801E9EBC end:0x801EA180
+
+damper.cpp:
+	.text       start:0x801EA180 end:0x801EB124
+	.ctors      start:0x803B7CC8 end:0x803B7CCC
+
+particle1d.cpp:
+	.text       start:0x801EB124 end:0x801EB4B4
+
+spring1d.cpp:
+	.text       start:0x801EB4B4 end:0x801EBA78
+
+particleemitter.cpp:
+	.text       start:0x801EBA78 end:0x801EC4F4
+
+soundgc.cpp:
+	.text       start:0x801EC4F4 end:0x801ECE74
+
+sound.cpp:
+	.text       start:0x801ECE74 end:0x801F4A58
+	.sdata      start:0x805AAD00 end:0x805AAD18
+
+soundgraph.cpp:
+	.text       start:0x801F4A58 end:0x801F6830
+
+soundobjectmanager.cpp:
+	.text       start:0x801F6830 end:0x801F77E4
+
+eventcontroller.cpp:
+	.text       start:0x801F77E4 end:0x801F8AAC
+
+startup.cpp:
+	.text       start:0x801F8AAC end:0x801F9C04
+	.ctors      start:0x803B7CCC end:0x803B7CD0
+	.dtors      start:0x803B8044 end:0x803B8048
+	.sdata      start:0x805AAD18 end:0x805AAD48
+	.sbss       start:0x805ABD60 end:0x805ABD6C
+
+basecamera.cpp:
+	.text       start:0x801F9C04 end:0x801FA9B4
+	.ctors      start:0x803B7CD0 end:0x803B7CD4
+	.dtors      start:0x803B8048 end:0x803B804C
+
+__cameralink.cpp:
+	.text       start:0x801FA9B4 end:0x801FAAAC
+
+__dynamicslink.cpp:
+	.text       start:0x801FAAAC end:0x801FAB40
+
+enginedatabase.cpp:
+	.text       start:0x801FAB40 end:0x80206008
+	.ctors      start:0x803B7CD4 end:0x803B7CD8
+	.sdata      start:0x805AAD48 end:0x805AAD58
+
+eventlist.cpp:
+	.text       start:0x80206008 end:0x802071E0
+
+geombuffer.cpp:
+	.text       start:0x802071E0 end:0x8020D41C
+	.sdata      start:0x805AAD58 end:0x805AAD60
+
+ListUser.cpp:
+	.text       start:0x8020D41C end:0x8020E83C
+
+locale.cpp:
+	.text       start:0x8020E83C end:0x8020EEB0
+
+savegame.cpp:
+	.text       start:0x8020EEB0 end:0x802111B8
+
+soundcontroller.cpp:
+	.text       start:0x802111B8 end:0x80211560
+	.ctors      start:0x803B7CD8 end:0x803B7CDC
+	.dtors      start:0x803B804C end:0x803B8050
+
+checkvisible.cpp:
+	.text       start:0x80211560 end:0x80213F98
+	.ctors      start:0x803B7CDC end:0x803B7CE0
+	.dtors      start:0x803B8050 end:0x803B8054
+	.sdata      start:0x805AAD60 end:0x805AAD7C
+	.sbss       start:0x805ABD6C end:0x805ABD7C
+
+__eventsbaselink.cpp:
+	.text       start:0x80213F98 end:0x80214390
+
+zgate.cpp:
+	.text       start:0x80214390 end:0x80215FEC
+	.ctors      start:0x803B7CE0 end:0x803B7CE4
+	.dtors      start:0x803B8054 end:0x803B8058
+
+__geomsbaselink.cpp:
+	.text       start:0x80215FEC end:0x80216414
+
+__geomsextendlink.cpp:
+	.text       start:0x80216414 end:0x8021662C
+
+__pathfinderlink.cpp:
+	.text       start:0x8021662C end:0x802166E8
+
+zcollisionbase.cpp:
+	.text       start:0x802166E8 end:0x80219D20
+
+zcollisionbox.cpp:
+	.text       start:0x80219D20 end:0x8021D528
+	.sdata      start:0x805AAD7C end:0x805AAD80
+
+ragdoll2.cpp:
+	.text       start:0x8021D528 end:0x802207A4
+
+zbonemodifybase.cpp:
+	.text       start:0x802207A4 end:0x80223AC8
+	.sdata      start:0x805AAD80 end:0x805AAD90
+
+zdrawdebug.cpp:
+	.text       start:0x80223AC8 end:0x80225E04
+	.rodata     start:0x803FE238 end:0x803FE664
+	.data       start:0x80433CF0 end:0x804341B0
+	.sbss       start:0x805ABD7C end:0x805ABD84
+
+ZDrawDebugGC.cpp:
+	.text       start:0x80225E04 end:0x80225F30
+
+zdrawresources.cpp:
+	.text       start:0x80225F30 end:0x802264E4
+
+ZRGCAllocIf.cpp:
+	.text       start:0x802264E4 end:0x802265F4
+
+ZRObjectInstanceGC.cpp:
+	.text       start:0x802265F4 end:0x8022C644
+	.rodata     start:0x803FE664 end:0x803FE70C
+
+renderbase.cpp:
+	.text       start:0x8022C644 end:0x8022FBD8
+	.rodata     start:0x803FE70C end:0x80408220
+	.sdata      start:0x805AAD90 end:0x805AAD98
+
+RenderPrimitives.cpp:
+	.text       start:0x8022FBD8 end:0x80230800
+	.data       start:0x804341B0 end:0x80434248
+	.sdata      start:0x805AAD98 end:0x805AADA8
+
+RenderSetup.cpp:
+	.text       start:0x80230800 end:0x802309C0
+	.sdata      start:0x805AADA8 end:0x805AADB0
+
+ZCameraViewEntryGC.cpp:
+	.text       start:0x802309C0 end:0x80230B24
+
+zdrawbase.cpp:
+	.text       start:0x80230B24 end:0x8023763C
+	.sdata      start:0x805AADB0 end:0x805AADB8
+
+zdrawgc.cpp:
+	.text       start:0x8023763C end:0x80239130
+
+zviewbase.cpp:
+	.text       start:0x80239130 end:0x80240D30
+	.sdata      start:0x805AADB8 end:0x805AADC8
+
+zviewgc.cpp:
+	.text       start:0x80240D30 end:0x80241D64
+
+shadowlist.cpp:
+	.text       start:0x80241D64 end:0x802436A0
+
+zcounter.cpp:
+	.text       start:0x802436A0 end:0x80244088
+
+rendergctex.cpp:
+	.text       start:0x80244088 end:0x80244830
+
+__sharedlink.cpp:
+	.text       start:0x80244830 end:0x80244994
+	.sdata      start:0x805AADC8 end:0x805AADE0
+
+synthgc.cpp:
+	.text       start:0x80244994 end:0x80246518
+	.sdata      start:0x805AADE0 end:0x805AADF8
+	.sbss       start:0x805ABD84 end:0x805ABD94
+
+actions.cpp:
+	.text       start:0x80246518 end:0x8024D624
+	.ctors      start:0x803B7CE4 end:0x803B7CE8
+
+errormessage.cpp:
+	.text       start:0x8024D624 end:0x8024E0FC
+	.sbss       start:0x805ABD94 end:0x805ABD98
+	.sdata2     start:0x805ACB88 end:0x805ACB8C
+
+memorycard.cpp:
+	.text       start:0x8024E0FC end:0x80250DAC
+	.ctors      start:0x803B7CE8 end:0x803B7CEC
+
+syscomgc.cpp:
+	.text       start:0x80250DAC end:0x802517B4
+
+sysfilegc.cpp:
+	.text       start:0x802517B4 end:0x80253690
+	.sdata      start:0x805AADF8 end:0x805AAE00
+	.sbss       start:0x805ABD98 end:0x805ABDE8
+
+sysinput.cpp:
+	.text       start:0x80253690 end:0x802548D8
+	.data       start:0x80434248 end:0x804343DC
+
+sysinputgc.cpp:
+	.text       start:0x802548D8 end:0x80255404
+	.sdata      start:0x805AAE00 end:0x805AAE18
+
+sysinputhaptics.cpp:
+	.text       start:0x80255404 end:0x80256784
+
+sysinterface.cpp:
+	.text       start:0x80256784 end:0x8025CF4C
+
+sysinterfacegc.cpp:
+	.text       start:0x8025CF4C end:0x8025ECFC
+
+sysmemgc.cpp:
+	.text       start:0x8025ECFC end:0x8025F574
+
+sysmemnew.cpp:
+	.text       start:0x8025F574 end:0x80260B7C
+
+TimeBar.cpp:
+	.text       start:0x80260B7C end:0x80260DE8
+	.sdata      start:0x805AAE18 end:0x805AAE20
+
+TimeBarManager.cpp:
+	.text       start:0x80260DE8 end:0x802613E0
+	.sdata      start:0x805AAE20 end:0x805AAE2C
+
+cconfiguration.cpp:
+	.text       start:0x802613E0 end:0x80264644
+
+cconfigurationgc.cpp:
+	.text       start:0x80264644 end:0x80264744
+
+configreader.cpp:
+	.text       start:0x80264744 end:0x80265CA8
+
+Vec3.cpp:
+	.text       start:0x80265CA8 end:0x80266094
+
+ccom.cpp:
+	.text       start:0x80266094 end:0x80268698
+
+collisionresponse.cpp:
+	.text       start:0x80268698 end:0x80268850
+
+consolecommand.cpp:
+	.text       start:0x80268850 end:0x80269210
+
+dblk.cpp:
+	.text       start:0x80269210 end:0x8026BDD8
+	.data       start:0x804343DC end:0x80434414
+
+dbread.cpp:
+	.text       start:0x8026BDD8 end:0x8026C780
+
+dllbase.cpp:
+	.text       start:0x8026C780 end:0x8026C898
+
+extpolymath.cpp:
+	.text       start:0x8026C898 end:0x8026F508
+	.data       start:0x80434414 end:0x80436CA4
+
+fastlookup.cpp:
+	.text       start:0x8026F508 end:0x80270E98
+
+iozip.cpp:
+	.text       start:0x80270E98 end:0x802758C4
+
+mempool.cpp:
+	.text       start:0x802758C4 end:0x80275B6C
+
+octree2.cpp:
+	.text       start:0x80275B6C end:0x80275E40
+
+octreecompiled.cpp:
+	.text       start:0x80275E40 end:0x80276E18
+
+paramparticle.cpp:
+	.text       start:0x80276E18 end:0x802772EC
+
+quadtree.cpp:
+	.text       start:0x802772EC end:0x80278DEC
+
+quicksort.cpp:
+	.text       start:0x80278DEC end:0x80279040
+	.sdata      start:0x805AAE2C end:0x805AAE58
+
+reftab.cpp:
+	.text       start:0x80279040 end:0x8027D96C
+
+treecommon.cpp:
+	.text       start:0x8027D96C end:0x8027DCD8
+
+zbasegeom.cpp:
+	.text       start:0x8027DCD8 end:0x802838B8
+
+zhash.cpp:
+	.text       start:0x802838B8 end:0x80283DFC
+
+zmallocnew.cpp:
+	.text       start:0x80283DFC end:0x80285074
+
+zmallocsimple.cpp:
+	.text       start:0x80285074 end:0x802855D0
+
+zmath.cpp:
+	.text       start:0x802855D0 end:0x8028AB00
+
+zrunmatposanim.cpp:
+	.text       start:0x8028AB00 end:0x8028B750
+
+zrunparamanim.cpp:
+	.text       start:0x8028B750 end:0x8028BFA0
+
+zrunvertanim.cpp:
+	.text       start:0x8028BFA0 end:0x8028C574
+
+zstring.cpp:
+	.text       start:0x8028C574 end:0x8028D440
+
+zanimfile.cpp:
+	.text       start:0x8028D440 end:0x8028F478
+
+gui_sound.cpp:
+	.text       start:0x8028F478 end:0x8028F700
+
+interface.cpp:
+	.text       start:0x8028F700 end:0x80293AF0
+	.ctors      start:0x803B7CEC end:0x803B7CF0
+	.dtors      start:0x803B8058 end:0x803B805C
+
+winsys.cpp:
+	.text       start:0x80293AF0 end:0x80296A30
+	.ctors      start:0x803B7CF0 end:0x803B7CF4
+	.dtors      start:0x803B805C end:0x803B8060
+
+zwindowspack.cpp:
+	.text       start:0x80296A30 end:0x80296DC8
+
+__zwindowslink.cpp:
+	.text       start:0x80296DC8 end:0x80296FF4
+
+nukeandrestart.cpp:
+	.text       start:0x80296FF4 end:0x80297588
+
+cameracontrol.cpp:
+	.text       start:0x80297588 end:0x8029AB3C
+	.ctors      start:0x803B7CF4 end:0x803B7CF8
+	.dtors      start:0x803B8060 end:0x803B8064
+	.sdata      start:0x805AAE58 end:0x805AAE98
+	.sbss       start:0x805ABDE8 end:0x805ABE00
+
+newdialogcamera.cpp:
+	.text       start:0x8029AB3C end:0x8029C70C
+	.ctors      start:0x803B7CF8 end:0x803B7CFC
+	.dtors      start:0x803B8064 end:0x803B8068
+
+particle3.cpp:
+	.text       start:0x8029C70C end:0x802A50E0
+	.ctors      start:0x803B7CFC end:0x803B7D00
+	.sdata      start:0x805AAE98 end:0x805AAEA4
+
+rigidbody.cpp:
+	.text       start:0x802A50E0 end:0x802A940C
+	.ctors      start:0x803B7D00 end:0x803B7D04
+	.dtors      start:0x803B8068 end:0x803B806C
+	.sdata      start:0x805AAEA4 end:0x805AAEB4
+
+shatter2.cpp:
+	.text       start:0x802A940C end:0x802A9D78
+	.ctors      start:0x803B7D04 end:0x803B7D08
+	.dtors      start:0x803B806C end:0x803B8070
+
+AmbientSound.cpp:
+	.text       start:0x802A9D78 end:0x802AAE34
+	.ctors      start:0x803B7D08 end:0x803B7D0C
+	.dtors      start:0x803B8070 end:0x803B8074
+
+geomsound.cpp:
+	.text       start:0x802AAE34 end:0x802AB768
+	.ctors      start:0x803B7D0C end:0x803B7D10
+	.dtors      start:0x803B8074 end:0x803B8078
+	.sdata      start:0x805AAEB4 end:0x805AAEB8
+
+MovingSound.cpp:
+	.text       start:0x802AB768 end:0x802ABF0C
+	.ctors      start:0x803B7D10 end:0x803B7D14
+	.dtors      start:0x803B8078 end:0x803B807C
+
+soundcontrol.cpp:
+	.text       start:0x802ABF0C end:0x802B6298
+	.ctors      start:0x803B7D14 end:0x803B7D18
+	.dtors      start:0x803B807C end:0x803B8080
+	.rodata     start:0x80408220 end:0x80414804
+	.sdata      start:0x805AAEB8 end:0x805AAEC8
+
+soundnotify.cpp:
+	.text       start:0x802B6298 end:0x802B6758
+	.ctors      start:0x803B7D18 end:0x803B7D1C
+	.dtors      start:0x803B8080 end:0x803B8084
+
+SoundToggle.cpp:
+	.text       start:0x802B6758 end:0x802B6CDC
+	.ctors      start:0x803B7D1C end:0x803B7D20
+	.dtors      start:0x803B8084 end:0x803B8088
+
+action.cpp:
+	.text       start:0x802B6CDC end:0x802BB448
+	.ctors      start:0x803B7D20 end:0x803B7D24
+	.dtors      start:0x803B8088 end:0x803B808C
+
+actorcollision.cpp:
+	.text       start:0x802BB448 end:0x802BD228
+	.ctors      start:0x803B7D24 end:0x803B7D28
+	.dtors      start:0x803B808C end:0x803B8090
+
+checkinside.cpp:
+	.text       start:0x802BD228 end:0x802BE0E0
+	.ctors      start:0x803B7D28 end:0x803B7D2C
+	.dtors      start:0x803B8090 end:0x803B8094
+
+cutsequence.cpp:
+	.text       start:0x802BE0E0 end:0x802C9454
+	.ctors      start:0x803B7D2C end:0x803B7D30
+	.dtors      start:0x803B8094 end:0x803B8098
+	.sdata      start:0x805AAEC8 end:0x805AAED8
+
+eventsbase.cpp:
+	.text       start:0x802C9454 end:0x802CD470
+	.ctors      start:0x803B7D30 end:0x803B7D34
+	.dtors      start:0x803B8098 end:0x803B809C
+	.sdata      start:0x805AAED8 end:0x805AAEF8
+	.sbss       start:0x805ABE00 end:0x805ABEB0
+
+inventory.cpp:
+	.text       start:0x802CD470 end:0x802D00A8
+	.ctors      start:0x803B7D34 end:0x803B7D38
+	.dtors      start:0x803B809C end:0x803B80A0
+
+pathfindercontrol.cpp:
+	.text       start:0x802D00A8 end:0x802D08EC
+	.ctors      start:0x803B7D38 end:0x803B7D3C
+	.dtors      start:0x803B80A0 end:0x803B80A4
+
+relaymessage.cpp:
+	.text       start:0x802D08EC end:0x802D12A0
+	.ctors      start:0x803B7D3C end:0x803B7D40
+	.dtors      start:0x803B80A4 end:0x803B80A8
+
+selectnotify.cpp:
+	.text       start:0x802D12A0 end:0x802D1CF4
+	.ctors      start:0x803B7D40 end:0x803B7D44
+	.dtors      start:0x803B80A8 end:0x803B80AC
+
+sigtecon.cpp:
+	.text       start:0x802D1CF4 end:0x802D3240
+	.ctors      start:0x803B7D44 end:0x803B7D48
+	.dtors      start:0x803B80AC end:0x803B80B0
+
+stdrouts.cpp:
+	.text       start:0x802D3240 end:0x802D5344
+	.ctors      start:0x803B7D48 end:0x803B7D4C
+	.dtors      start:0x803B80B0 end:0x803B80B4
+
+teleportlist.cpp:
+	.text       start:0x802D5344 end:0x802D5818
+	.ctors      start:0x803B7D4C end:0x803B7D50
+	.dtors      start:0x803B80B4 end:0x803B80B8
+
+viewnotify.cpp:
+	.text       start:0x802D5818 end:0x802D6A64
+	.ctors      start:0x803B7D50 end:0x803B7D54
+	.dtors      start:0x803B80B8 end:0x803B80BC
+
+waves.cpp:
+	.text       start:0x802D6A64 end:0x802D7038
+	.ctors      start:0x803B7D54 end:0x803B7D58
+	.dtors      start:0x803B80BC end:0x803B80C0
+
+windcontrol.cpp:
+	.text       start:0x802D7038 end:0x802D7B58
+	.ctors      start:0x803B7D58 end:0x803B7D5C
+	.dtors      start:0x803B80C0 end:0x803B80C4
+
+zanimsequence.cpp:
+	.text       start:0x802D7B58 end:0x802D8B24
+	.ctors      start:0x803B7D5C end:0x803B7D60
+	.dtors      start:0x803B80C4 end:0x803B80C8
+	.sdata      start:0x805AAEF8 end:0x805AAEFC
+
+zattachgeomtobone.cpp:
+	.text       start:0x802D8B24 end:0x802D92CC
+	.ctors      start:0x803B7D60 end:0x803B7D64
+	.dtors      start:0x803B80C8 end:0x803B80CC
+	.sdata      start:0x805AAEFC end:0x805AAF00
+
+zgeomparticle.cpp:
+	.text       start:0x802D92CC end:0x802DAD88
+	.ctors      start:0x803B7D64 end:0x803B7D68
+	.dtors      start:0x803B80CC end:0x803B80D0
+
+zgeomspawn.cpp:
+	.text       start:0x802DAD88 end:0x802DB970
+	.ctors      start:0x803B7D68 end:0x803B7D6C
+	.dtors      start:0x803B80D0 end:0x803B80D4
+
+zmatposanim.cpp:
+	.text       start:0x802DB970 end:0x802DD038
+	.ctors      start:0x803B7D6C end:0x803B7D70
+	.dtors      start:0x803B80D4 end:0x803B80D8
+	.sdata      start:0x805AAF00 end:0x805AAF04
+
+zparamanim.cpp:
+	.text       start:0x802DD038 end:0x802DE0A8
+	.ctors      start:0x803B7D70 end:0x803B7D74
+	.dtors      start:0x803B80D8 end:0x803B80DC
+
+zparticleemitter.cpp:
+	.text       start:0x802DE0A8 end:0x802DF6A0
+	.ctors      start:0x803B7D74 end:0x803B7D78
+	.dtors      start:0x803B80DC end:0x803B80E0
+	.sdata      start:0x805AAF04 end:0x805AAF0C
+
+zprojectile.cpp:
+	.text       start:0x802DF6A0 end:0x802E1C9C
+	.ctors      start:0x803B7D78 end:0x803B7D7C
+	.dtors      start:0x803B80E0 end:0x803B80E4
+	.sdata      start:0x805AAF0C end:0x805AAF14
+
+zshotactivate.cpp:
+	.text       start:0x802E1C9C end:0x802E2944
+	.ctors      start:0x803B7D7C end:0x803B7D80
+	.dtors      start:0x803B80E4 end:0x803B80E8
+
+ztextureanim.cpp:
+	.text       start:0x802E2944 end:0x802E2EB8
+	.ctors      start:0x803B7D80 end:0x803B7D84
+	.dtors      start:0x803B80E8 end:0x803B80EC
+	.sdata      start:0x805AAF14 end:0x805AAF18
+
+zvertanim.cpp:
+	.text       start:0x802E2EB8 end:0x802E3D64
+	.ctors      start:0x803B7D84 end:0x803B7D88
+	.dtors      start:0x803B80EC end:0x803B80F0
+	.sdata      start:0x805AAF18 end:0x805AAF50
+
+z2dobj.cpp:
+	.text       start:0x802E3D64 end:0x802E4470
+	.ctors      start:0x803B7D88 end:0x803B7D8C
+	.dtors      start:0x803B80F0 end:0x803B80F4
+
+zboneparticle.cpp:
+	.text       start:0x802E4470 end:0x802E7300
+	.ctors      start:0x803B7D8C end:0x803B7D90
+	.dtors      start:0x803B80F4 end:0x803B80F8
+
+zbound.cpp:
+	.text       start:0x802E7300 end:0x802E75A4
+	.ctors      start:0x803B7D90 end:0x803B7D94
+	.dtors      start:0x803B80F8 end:0x803B80FC
+
+zboxgategroup.cpp:
+	.text       start:0x802E75A4 end:0x802E7C8C
+	.ctors      start:0x803B7D94 end:0x803B7D98
+	.dtors      start:0x803B80FC end:0x803B8100
+
+zcloth.cpp:
+	.text       start:0x802E7C8C end:0x802EAC54
+	.ctors      start:0x803B7D98 end:0x803B7D9C
+	.dtors      start:0x803B8100 end:0x803B8104
+
+zcubegrid.cpp:
+	.text       start:0x802EAC54 end:0x802EBD78
+	.ctors      start:0x803B7D9C end:0x803B7DA0
+	.dtors      start:0x803B8104 end:0x803B8108
+
+zenvironment.cpp:
+	.text       start:0x802EBD78 end:0x802EC558
+	.ctors      start:0x803B7DA0 end:0x803B7DA4
+	.dtors      start:0x803B8108 end:0x803B810C
+
+zhelper.cpp:
+	.text       start:0x802EC558 end:0x802ECE58
+	.ctors      start:0x803B7DA4 end:0x803B7DA8
+	.dtors      start:0x803B810C end:0x803B8110
+
+zinstance.cpp:
+	.text       start:0x802ECE58 end:0x802ED414
+	.ctors      start:0x803B7DA8 end:0x803B7DAC
+	.dtors      start:0x803B8110 end:0x803B8114
+
+zlight.cpp:
+	.text       start:0x802ED414 end:0x802F0BDC
+	.ctors      start:0x803B7DAC end:0x803B7DB0
+	.dtors      start:0x803B8114 end:0x803B8118
+
+zlist.cpp:
+	.text       start:0x802F0BDC end:0x802F1B80
+	.ctors      start:0x803B7DB0 end:0x803B7DB4
+	.dtors      start:0x803B8118 end:0x803B811C
+
+zmaterialdescriptor.cpp:
+	.text       start:0x802F1B80 end:0x802F28EC
+	.ctors      start:0x803B7DB4 end:0x803B7DB8
+	.dtors      start:0x803B811C end:0x803B8120
+	.sdata      start:0x805AAF50 end:0x805AAF80
+
+zparticlebox.cpp:
+	.text       start:0x802F28EC end:0x802F59E4
+	.ctors      start:0x803B7DB8 end:0x803B7DBC
+	.dtors      start:0x803B8120 end:0x803B8124
+
+zpathgroup.cpp:
+	.text       start:0x802F59E4 end:0x802F5FF0
+	.ctors      start:0x803B7DBC end:0x803B7DC0
+	.dtors      start:0x803B8124 end:0x803B8128
+
+zpicobj.cpp:
+	.text       start:0x802F5FF0 end:0x802F6B28
+	.ctors      start:0x803B7DC0 end:0x803B7DC4
+	.dtors      start:0x803B8128 end:0x803B812C
+
+zprimitive.cpp:
+	.text       start:0x802F6B28 end:0x802F7360
+	.ctors      start:0x803B7DC4 end:0x803B7DC8
+	.dtors      start:0x803B812C end:0x803B8130
+
+zprojectmarks.cpp:
+	.text       start:0x802F7360 end:0x802F90A4
+	.ctors      start:0x803B7DC8 end:0x803B7DCC
+	.dtors      start:0x803B8130 end:0x803B8134
+
+allocmany.cpp:
+	.text       start:0x802F90A4 end:0x802FA1DC
+	.ctors      start:0x803B7DCC end:0x803B7DD0
+	.dtors      start:0x803B8134 end:0x803B8138
+
+bonesclass.cpp:
+	.text       start:0x802FA1DC end:0x802FA9C8
+	.ctors      start:0x803B7DD0 end:0x803B7DD4
+	.dtors      start:0x803B8138 end:0x803B813C
+
+languageversion.cpp:
+	.text       start:0x802FA9C8 end:0x802FAB8C
+	.ctors      start:0x803B7DD4 end:0x803B7DD8
+	.dtors      start:0x803B813C end:0x803B8140
+
+zboxstdobj.cpp:
+	.text       start:0x802FAB8C end:0x802FB2EC
+	.ctors      start:0x803B7DD8 end:0x803B7DDC
+	.dtors      start:0x803B8140 end:0x803B8144
+
+zitem.cpp:
+	.text       start:0x802FB2EC end:0x80307E88
+	.ctors      start:0x803B7DDC end:0x803B7DE0
+	.dtors      start:0x803B8144 end:0x803B8148
+	.sdata      start:0x805AAF80 end:0x805AAFD8
+
+zlightoverlay.cpp:
+	.text       start:0x80307E88 end:0x80308E94
+	.ctors      start:0x803B7DE0 end:0x803B7DE4
+	.dtors      start:0x803B8148 end:0x803B814C
+
+colitreecompiled.cpp:
+	.text       start:0x80308E94 end:0x8030C500
+	.sdata      start:0x805AAFD8 end:0x805AAFF8
+	.sdata2     start:0x805ACB8C end:0x805ACB90
+
+stripcolitreecompiled.cpp:
+	.text       start:0x8030C500 end:0x8030E4A0
+	.sdata      start:0x805AAFF8 end:0x805AB00C
+	.sdata2     start:0x805ACB90 end:0x805ACB98
+
+boundgatecheck.cpp:
+	.text       start:0x8030E4A0 end:0x8030F3B4
+
+zgeometrydecal.cpp:
+	.text       start:0x8030F3B4 end:0x803108A4
+
+ZRObjectBonesVSGC.cpp:
+	.text       start:0x803108A4 end:0x803109E8
+
+ZRObjectSpriteGC.cpp:
+	.text       start:0x803109E8 end:0x80310AFC
+
+zrobjectstripgc.cpp:
+	.text       start:0x80310AFC end:0x80310C78
+
+ZRObjectStripVertAnimGC.cpp:
+	.text       start:0x80310C78 end:0x80310DB4
+
+zdrawbuffer.cpp:
+	.text       start:0x80310DB4 end:0x8031131C
+
+zprimcontrolbase.cpp:
+	.text       start:0x8031131C end:0x80312FFC
+
+rendergcdll.cpp:
+	.text       start:0x80312FFC end:0x8031332C
+
+zcollisiongc.cpp:
+	.text       start:0x8031332C end:0x80316734
+
+zprimcontrolgc.cpp:
+	.text       start:0x80316734 end:0x80318550
+
+scriptfactory.cpp:
+	.text       start:0x80318550 end:0x803194AC
+
+engine_if.cpp:
+	.text       start:0x803194AC end:0x8031B66C
+	.sdata      start:0x805AB00C end:0x805AB014
+
+item_if.cpp:
+	.text       start:0x8031B66C end:0x80321220
+	.sdata      start:0x805AB014 end:0x805AB01C
+
+scene_if.cpp:
+	.text       start:0x80321220 end:0x80328EF8
+	.sdata      start:0x805AB01C end:0x805AB024
+	.sbss       start:0x805ABEB0 end:0x805ABEC8
+
+sound_if.cpp:
+	.text       start:0x80328EF8 end:0x8032A334
+	.sdata      start:0x805AB024 end:0x805AB02C
+
+list_if.cpp:
+	.text       start:0x8032A334 end:0x8032C480
+	.sdata      start:0x805AB02C end:0x805AB030
+
+scriptdll.cpp:
+	.text       start:0x8032C480 end:0x8032DFD0
+	.sdata      start:0x805AB030 end:0x805AB034
+
+opaquetype_string.cpp:
+	.text       start:0x8032DFD0 end:0x8033257C
+	.sdata      start:0x805AB034 end:0x805AB038
+
+opaquetype_usertype.cpp:
+	.text       start:0x8033257C end:0x803345F0
+	.sdata      start:0x805AB038 end:0x805AB03C
+
+car.cpp:
+	.text       start:0x803345F0 end:0x80336E38
+	.ctors      start:0x803B7DE4 end:0x803B7DE8
+	.dtors      start:0x803B814C end:0x803B8150
+	.sdata      start:0x805AB03C end:0x805AB040
+
+pmv.cpp:
+	.text       start:0x80336E38 end:0x803379F0
+	.ctors      start:0x803B7DE8 end:0x803B7DEC
+	.dtors      start:0x803B8150 end:0x803B8154
+	.sdata      start:0x805AB040 end:0x805AB048
+
+undercarriagecar.cpp:
+	.text       start:0x803379F0 end:0x8033A558
+	.sdata      start:0x805AB048 end:0x805AB058
+
+soundstreamer.cpp:
+	.text       start:0x8033A558 end:0x8033AF54
+
+synth.cpp:
+	.text       start:0x8033AF54 end:0x8033D250
+	.rodata     start:0x80414804 end:0x804179A8
+
+soundstreamergc.cpp:
+	.text       start:0x8033D250 end:0x8033D6CC
+
+syscom.cpp:
+	.text       start:0x8033D6CC end:0x8033D85C
+
+sysfile.cpp:
+	.text       start:0x8033D85C end:0x8033F7B0
+
+binarytrees.cpp:
+	.text       start:0x8033F7B0 end:0x8034057C
+
+fastboxcoli.cpp:
+	.text       start:0x8034057C end:0x80342930
+
+filesystem.cpp:
+	.text       start:0x80342930 end:0x803437D4
+	.ctors      start:0x803B7DEC end:0x803B7DF0
+
+uvproject.cpp:
+	.text       start:0x803437D4 end:0x80343DD0
+
+zkeyspack.cpp:
+	.text       start:0x80343DD0 end:0x80344190
+
+zbonecontrol.cpp:
+	.text       start:0x80344190 end:0x803442BC
+
+editcontrol.cpp:
+	.text       start:0x803442BC end:0x803454BC
+	.ctors      start:0x803B7DF0 end:0x803B7DF4
+	.dtors      start:0x803B8154 end:0x803B8158
+
+wingfx.cpp:
+	.text       start:0x803454BC end:0x803463F0
+	.ctors      start:0x803B7DF4 end:0x803B7DF8
+	.dtors      start:0x803B8158 end:0x803B815C
+
+zbutton.cpp:
+	.text       start:0x803463F0 end:0x80346AFC
+	.ctors      start:0x803B7DF8 end:0x803B7DFC
+	.dtors      start:0x803B815C end:0x803B8160
+
+zcontrol.cpp:
+	.text       start:0x80346AFC end:0x80348980
+	.ctors      start:0x803B7DFC end:0x803B7E00
+	.dtors      start:0x803B8160 end:0x803B8164
+
+zlineobj.cpp:
+	.text       start:0x80348980 end:0x803491F0
+	.ctors      start:0x803B7E00 end:0x803B7E04
+	.dtors      start:0x803B8164 end:0x803B8168
+
+zpanel.cpp:
+	.text       start:0x803491F0 end:0x8034A0D8
+	.ctors      start:0x803B7E04 end:0x803B7E08
+	.dtors      start:0x803B8168 end:0x803B816C
+
+zscrollarea.cpp:
+	.text       start:0x8034A0D8 end:0x8034BE00
+	.ctors      start:0x803B7E08 end:0x803B7E0C
+	.dtors      start:0x803B816C end:0x803B8170
+
+zslider.cpp:
+	.text       start:0x8034BE00 end:0x8034D000
+	.ctors      start:0x803B7E0C end:0x803B7E10
+	.dtors      start:0x803B8170 end:0x803B8174
+
+zttfont.cpp:
+	.text       start:0x8034D000 end:0x8034D5DC
+	.ctors      start:0x803B7E10 end:0x803B7E14
+	.dtors      start:0x803B8174 end:0x803B8178
+
+zwindow.cpp:
+	.text       start:0x8034D5DC end:0x8034DE68
+	.ctors      start:0x803B7E14 end:0x803B7E18
+	.dtors      start:0x803B8178 end:0x803B817C
+
+zwinpic.cpp:
+	.text       start:0x8034DE68 end:0x8034E31C
+	.ctors      start:0x803B7E18 end:0x803B7E1C
+	.dtors      start:0x803B817C end:0x803B8180
