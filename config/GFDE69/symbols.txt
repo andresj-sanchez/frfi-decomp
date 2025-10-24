@@ -1,4 +1,5 @@
 __start = .init:0x80003100; // type:label scope:global
+entry = .init:0x80003100; // type:function size:0x124 scope:global
 _skipdbg = .init:0x8000319C; // type:label scope:local
 _check_pad3 = .init:0x800031CC; // type:label scope:local
 _skip_crc = .init:0x800031D0; // type:label scope:local
@@ -18858,8 +18859,8 @@ _._13ScriptEvent_t = .text:0x803B7978; // type:function size:0x20 scope:global
 _._27CSdlDataExchangeTypeMapData = .text:0x803B7998; // type:function size:0x60 scope:global
 __27CSdlDataExchangeTypeMapData = .text:0x803B79F8; // type:function size:0x64 scope:global
 _._5ZFONT = .text:0x803B7A5C; // type:function size:0x44 scope:global
-__CTOR_LIST__ = .ctors:0x803B7AA0; // type:object scope:global
-__DTOR_LIST__ = .dtors:0x803B7E20; // type:object scope:global
+__CTOR_LIST__ = .ctors:0x803B7AA0; // type:object size:0x4 scope:global data:4byte
+__DTOR_LIST__ = .dtors:0x803B7E20; // type:object size:0x4 scope:global
 blanks.30 = .rodata:0x803B8F08; // type:object size:0x10 scope:local
 zeroes.31 = .rodata:0x803B8F18; // type:object size:0x10 scope:local
 blanks.13 = .rodata:0x803B8F98; // type:object size:0x10 scope:local
