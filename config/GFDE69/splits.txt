@@ -10,14 +10,10 @@ Sections:
 	.sbss       type:bss align:32
 	.sdata2     type:rodata align:8
 
-prodg_fixes.cpp:
-	.ctors      start:0x803B7AA0 end:0x803B7AA4 skip
-    .dtors      start:0x803B7E20 end:0x803B7E24 skip
-
 GameOSD.cpp:
 	.text       start:0x80059450 end:0x8005C4EC
-    .ctors      start:0x803B7AA4 end:0x803B7AA8
-    .dtors      start:0x803B7E24 end:0x803B7E28
+	.ctors      start:0x803B7AA4 end:0x803B7AA8
+	.dtors      start:0x803B7E24 end:0x803B7E28
 
 Charisma.cpp:
 	.text       start:0x80060814 end:0x80060C80
@@ -1663,6 +1659,11 @@ stripcolitreecompiled.cpp:
 	.text       start:0x8030C500 end:0x8030E4A0
 	.sdata      start:0x805AAFF8 end:0x805AB00C
 	.sdata2     start:0x805ACB90 end:0x805ACB98
+
+prodg_fixes.cpp:
+	.ctors      start:0x803B7AA0 end:0x803B7AA4 skip
+	.dtors      start:0x803B7E20 end:0x803B7E24 skip
+	.sdata2     start:0x805AD4F8 end:0x805AD500 skip
 
 boundgatecheck.cpp:
 	.text       start:0x8030E4A0 end:0x8030F3B4
