@@ -96,7 +96,7 @@ SECTIONS
 		_e_sbss = .;
 		__SBSS_END__ = .;
 	}
-	. = 0x805ac000;
+	. = ALIGN(32);
 	.sdata2   :
 	{
 		__SDATA2_START__ = .;
