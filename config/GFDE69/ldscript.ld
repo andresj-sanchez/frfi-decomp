@@ -96,7 +96,7 @@ SECTIONS
 		_e_sbss = .;
 		__SBSS_END__ = .;
 	}
-	. =  ALIGN(8);
+	. = 0x805ac000;
 	.sdata2   :
 	{
 		__SDATA2_START__ = .;
@@ -127,7 +127,7 @@ SECTIONS
 	. = . + 16;		
 	. = ALIGN(32);		
 	_stack_end = .;
-	. = . + 0x10000;	
+	. = . + 0x40000;	
 
 
 	_stack_addr = .;
