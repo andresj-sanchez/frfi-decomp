@@ -10,10 +10,509 @@ Sections:
 	.sbss       type:bss align:32
 	.sdata2     type:rodata align:8
 
+impure.c:
+	.data       start:0x80426E40 end:0x80427144
+
+DEMOFont.c:
+	.data       start:0x8042A340 end:0x8042AF40
+
+AXComp.c:
+	.data       start:0x8042B1A0 end:0x8042CBE0
+
+DSPCode.c:
+	.data       start:0x8042CBE0 end:0x8042EB00
+
+movieplayer.c:
+	.init       start:0x80003100 end:0x80003224
+	.text       start:0x80003340 end:0x8000365C
+
+THPAudioDecode.c:
+	.text       start:0x8000365C end:0x80003A58
+
+THPDraw.c:
+	.text       start:0x80003A58 end:0x80004230
+
+THPPlayer.c:
+	.text       start:0x80004230 end:0x80005BF4
+
+THPRead.c:
+	.text       start:0x80005BF4 end:0x80005F1C
+
+THPSimple.c:
+	.text       start:0x80005F1C end:0x80007518
+
+THPVideoDecode.c:
+	.text       start:0x80007518 end:0x80007A44
+
+FreedomFighter.cpp:
+	.text       start:0x80007A44 end:0x80007B0C
+
+rendergcdraw.cpp:
+	.text       start:0x80007B0C end:0x8000BDB4
+
+ZRObjectInstanceSpriteGC.cpp:
+	.text       start:0x8000BDB4 end:0x8000DC04
+
+ZRObjectInstanceStripGC.cpp:
+	.text       start:0x8000DC04 end:0x8000E26C
+
+ppcdown.s:
+	.text       start:0x8000E26C end:0x8000FAC0
+
+fileserver.s:
+	.text       start:0x8000FAC0 end:0x8000FC10
+
+proview.s:
+	.text       start:0x8000FC10 end:0x8001036C
+
+tealeaf.s:
+	.text       start:0x8001036C end:0x80010414
+
+dummy.c:
+	.text       start:0x80010414 end:0x8001078C
+
+e_exp.s:
+	.text       start:0x8001078C end:0x80010A08
+
+e_sqrt.s:
+	.text       start:0x80010A08 end:0x80010C6C
+	.sdata2     start:0x805AC090 end:0x805AC0A0
+
+s_cos.s:
+	.text       start:0x80010C6C end:0x80010D4C
+
+s_sin.s:
+	.text       start:0x80010D4C end:0x80010E2C
+
+s_tan.s:
+	.text       start:0x80010E2C end:0x80010EB0
+
+k_cos.s:
+	.text       start:0x80010EB0 end:0x80010FA4
+	.sdata2     start:0x805AC0A0 end:0x805AC0D8
+
+k_sin.s:
+	.text       start:0x80010FA4 end:0x80011050
+	.sdata2     start:0x805AC0D8 end:0x805AC110
+
+k_tan.s:
+	.text       start:0x80011050 end:0x800112AC
+	.sdata2     start:0x805AC110 end:0x805AC190
+
+e_rem_pio.s:
+	.text       start:0x800112AC end:0x80011610
+	.sdata2     start:0x805AC190 end:0x805AC368
+
+s_fabs.s:
+	.text       start:0x80011610 end:0x8001164C
+
+k_rem_pio.s:
+	.text       start:0x8001164C end:0x80011ED8
+	.sdata2     start:0x805AC368 end:0x805AC3D8
+
+s_floor.s:
+	.text       start:0x80011ED8 end:0x80012044
+	.sdata2     start:0x805AC3D8 end:0x805AC3E0
+
+s_scalbn.s:
+	.text       start:0x80012044 end:0x80012198
+	.sdata2     start:0x805AC3E0 end:0x805AC400
+
+s_copysign.s:
+	.text       start:0x80012198 end:0x800121F0
+
+fprintf.c:
+	.text       start:0x800121F0 end:0x80012284
+
+exit.c:
+	.text       start:0x80012284 end:0x80012304
+
+sn_malloc.c:
+	.text       start:0x80012304 end:0x800123F4
+
+memcpy.c:
+	.text       start:0x800123F4 end:0x80012498
+
+memmove.c:
+	.text       start:0x80012498 end:0x80012584
+
+memset.c:
+	.text       start:0x80012584 end:0x80012618
+
+strcmp.c:
+	.text       start:0x80012618 end:0x800126C0
+
+vfprintf.c:
+	.text       start:0x800126C0 end:0x800142DC
+
+vfiprintf.c:
+	.text       start:0x800142DC end:0x800156E4
+
+locale.c:
+	.text       start:0x800156E4 end:0x800158F8
+
+mbtowc_r.c:
+	.text       start:0x800158F8 end:0x80015C14
+
+memchr.c:
+	.text       start:0x80015C14 end:0x80015CD4
+
+strcpy.c:
+	.text       start:0x80015CD4 end:0x80015D58
+
+strlen.c:
+	.text       start:0x80015D58 end:0x80015DC4
+
+__ashldi3.c:
+	.text       start:0x80015DC4 end:0x80015E04
+
+__ashrdi3.c:
+	.text       start:0x80015E04 end:0x80015E44
+
+__cmpdi2.c:
+	.text       start:0x80015E44 end:0x80015E80
+
+__divdi3.c:
+	.text       start:0x80015E80 end:0x800163FC
+	.sdata2     start:0x805AC400 end:0x805AC500
+
+__fixdfdi.c:
+	.text       start:0x80016404 end:0x80016448
+
+__fixunsdfdi.c:
+	.text       start:0x80016448 end:0x80016600
+
+__floatdidf.c:
+	.text       start:0x80016600 end:0x8001665C
+
+__floatdisf.c:
+	.text       start:0x8001665C end:0x8001670C
+
+__lshrdi3.c:
+	.text       start:0x8001670C end:0x8001674C
+
+__moddi3.c:
+	.text       start:0x8001674C end:0x80016C80
+	.sdata2     start:0x805AC500 end:0x805AC600
+
+__udivdi3.c:
+	.text       start:0x80016C80 end:0x80017164
+	.sdata2     start:0x805AC600 end:0x805AC700
+
+__umoddi3.c:
+	.text       start:0x80017164 end:0x800175FC
+	.sdata2     start:0x805AC700 end:0x805AC800
+
+builtin-delete.cpp:
+	.text       start:0x800175FC end:0x800176CC
+
+THPDec.c:
+	.text       start:0x800176CC end:0x8001EC34
+
+THPAudio.c:
+	.text       start:0x8001EC34 end:0x8001F164
+
+PPCArch.c:
+	.text       start:0x8001F164 end:0x8001F384
+
+OS.c:
+	.text       start:0x8001F384 end:0x8001FD84
+
+OSAlarm.c:
+	.text       start:0x8001FD84 end:0x800207AC
+
+OSAlloc.c:
+	.text       start:0x800207AC end:0x800213A0
+
+OSArena.c:
+	.text       start:0x800213A0 end:0x8002140C
+
+OSAudioSystem.c:
+	.text       start:0x8002140C end:0x800216A0
+
+OSCache.c:
+	.text       start:0x800216A0 end:0x8002217C
+
+OSContext.c:
+	.text       start:0x8002217C end:0x80022B60
+
+OSError.c:
+	.text       start:0x80022B60 end:0x8002322C
+
+OSInterrupt.c:
+	.text       start:0x8002322C end:0x80023B34
+
+OSLink.c:
+	.text       start:0x80023B34 end:0x80024568
+
+OSMessage.c:
+	.text       start:0x80024568 end:0x800248E0
+
+OSMemory.c:
+	.text       start:0x800248E0 end:0x80024C9C
+
+OSReset.c:
+	.text       start:0x80024C9C end:0x800251AC
+
+OSResetSW.c:
+	.text       start:0x800251AC end:0x80025628
+
+OSRtc.c:
+	.text       start:0x80025628 end:0x80026E14
+
+OSSync.c:
+	.text       start:0x80026E14 end:0x80026E98
+
+OSThread.c:
+	.text       start:0x80026E98 end:0x80028F10
+
+OSTime.c:
+	.text       start:0x80028F10 end:0x8002988C
+
+crt0.s:
+	.init       start:0x80003224 end:0x800032D0
+
+__ppc_eabi_init.cpp:
+	.init       start:0x800032D0 end:0x80003340
+	.text       start:0x8002988C end:0x800299E8
+
+OSMutex.c:
+	.text       start:0x800299E8 end:0x8002A014
+
+OSReboot.c:
+	.text       start:0x8002A014 end:0x8002A468
+
+EXIBios.c:
+	.text       start:0x8002A468 end:0x8002C394
+
+EXIUart.c:
+	.text       start:0x8002C394 end:0x8002CA08
+
+SIBios.c:
+	.text       start:0x8002CA08 end:0x8002E660
+
+SISamplingRate.c:
+	.text       start:0x8002E660 end:0x8002E768
+
+db.c:
+	.text       start:0x8002E768 end:0x8002E8C0
+
+mtx.c:
+	.text       start:0x8002E8C0 end:0x80030434
+
+mtx44.c:
+	.text       start:0x80030434 end:0x80031A34
+
+vec.c:
+	.text       start:0x80031A34 end:0x80032130
+
+dvdfs.c:
+	.text       start:0x80032130 end:0x80033320
+
+dvd.c:
+	.text       start:0x80033320 end:0x80036DAC
+
+dvdqueue.c:
+	.text       start:0x80036DAC end:0x800371E0
+
+dvderror.c:
+	.text       start:0x800371E0 end:0x800374D8
+
+dvdidutils.c:
+	.text       start:0x800374D8 end:0x80037688
+
+dvdFatal.c:
+	.text       start:0x80037688 end:0x800377B4
+
+fstload.c:
+	.text       start:0x800377B4 end:0x800379F4
+
+dvdlow.c:
+	.text       start:0x800379F4 end:0x80038C90
+
+vi.c:
+	.text       start:0x80038C90 end:0x8003B7D4
+
+DEMOInit.c:
+	.text       start:0x8003B7D4 end:0x8003C6A0
+
+DEMOPad.c:
+	.text       start:0x8003C6A0 end:0x8003C9D8
+
+DEMOStats.c:
+	.text       start:0x8003C9D8 end:0x8003D790
+
+DEMOPuts.c:
+	.text       start:0x8003D790 end:0x8003EAE0
+
+Padclamp.c:
+	.text       start:0x8003EAE0 end:0x8003F014
+
+Pad.c:
+	.text       start:0x8003F014 end:0x80040EF4
+
+ai.c:
+	.text       start:0x80040EF4 end:0x80041910
+
+ar.c:
+	.text       start:0x80041910 end:0x80043848
+
+arq.c:
+	.text       start:0x80043848 end:0x80043ED0
+
+AX.c:
+	.text       start:0x80043ED0 end:0x80043F40
+
+AXAlloc.c:
+	.text       start:0x80043F40 end:0x800447D4
+
+AXAux.c:
+	.text       start:0x800447D4 end:0x80044C74
+
+AXCL.c:
+	.text       start:0x80044C74 end:0x800453CC
+
+AXOut.c:
+	.text       start:0x800453CC end:0x80045AC0
+
+AXSPB.c:
+	.text       start:0x80045AC0 end:0x80045FFC
+	.bss        start:0x80514E20 end:0x80514E60
+
+AXVPB.c:
+	.text       start:0x80045FFC end:0x800477E0
+
+AXProf.c:
+	.text       start:0x800477E0 end:0x80047890
+	.sbss       start:0x805ABC10 end:0x805ABC20
+
+mix.c:
+	.text       start:0x80047890 end:0x8004A054
+
+axart.c:
+	.text       start:0x8004A054 end:0x8004A74C
+	.data       start:0x8042F6C0 end:0x8042F708
+
+axartsound.c:
+	.text       start:0x8004A74C end:0x8004AA34
+	.data       start:0x8042F708 end:0x8042F750
+
+axartcents.c:
+	.text       start:0x8004AA34 end:0x8004AB30
+	.data       start:0x8042F750 end:0x80430140
+
+axartenv.c:
+	.text       start:0x8004AB30 end:0x8004ABE8
+
+axartlfo.c:
+	.text       start:0x8004ABE8 end:0x8004AC9C
+	.sdata2     start:0x805AC9D8 end:0x805AC9E0
+
+axart3d.c:
+	.text       start:0x8004AC9C end:0x8004AE30
+	.data       start:0x80430140 end:0x804309B8
+
+dsp.c:
+	.text       start:0x8004AE30 end:0x8004B1E8
+	.data       start:0x804309B8 end:0x80430A38
+
+dsp_debug.c:
+	.text       start:0x8004B1E8 end:0x8004B240
+
+dsp_task.c:
+	.text       start:0x8004B240 end:0x8004BB3C
+	.data       start:0x80430A38 end:0x80430B78
+
+GXInit.c:
+	.text       start:0x8004BB3C end:0x8004CF38
+
+GXFifo.c:
+	.text       start:0x8004CF38 end:0x8004DED8
+
+GXAttr.c:
+	.text       start:0x8004DED8 end:0x8004F8F4
+
+GXMisc.c:
+	.text       start:0x8004F8F4 end:0x800506D8
+
+GXGeometry.c:
+	.text       start:0x800506D8 end:0x80050B08
+
+GXFrameBuf.c:
+	.text       start:0x80050B08 end:0x80051940
+
+GXLight.c:
+	.text       start:0x80051940 end:0x80052160
+	.data       start:0x804316D0 end:0x804316F0
+
+GXTexture.c:
+	.text       start:0x80052160 end:0x80053D00
+
+GXBump.c:
+	.text       start:0x80053D00 end:0x80054694
+	.sdata2     start:0x805ACAC8 end:0x805ACB00
+
+GXTev.c:
+	.text       start:0x80054694 end:0x80054E7C
+	.data       start:0x80431A08 end:0x80431A80
+
+GXPixel.c:
+	.text       start:0x80054E7C end:0x8005567C
+	.data       start:0x80431A80 end:0x80431AFC
+
+GXTransform.c:
+	.text       start:0x8005567C end:0x80056024
+
+GXPerf.c:
+	.text       start:0x80056024 end:0x800570E0
+	.data       start:0x80431AFC end:0x804336C0
+
+GXStubs.c:
+	.text       start:0x800570E0 end:0x800570E4
+
+AmcExi2Stubs.c:
+	.text       start:0x800570E4 end:0x80057114
+
+DebuggerDriver.c:
+	.text       start:0x80057114 end:0x80057EC8
+
+zstl_glacierallocator.cpp:
+	.text       start:0x80057EC8 end:0x80057F50
+
+__ffbackgroundlink.cpp:
+	.text       start:0x80057F50 end:0x80058D30
+
+PosMarkerControl.cpp:
+	.text       start:0x80058D30 end:0x80059048
+
+SelectionControl.cpp:
+	.text       start:0x80059048 end:0x80059450
+
 GameOSD.cpp:
 	.text       start:0x80059450 end:0x8005C4EC
 	.ctors      start:0x803B7AA4 end:0x803B7AA8
 	.dtors      start:0x803B7E24 end:0x803B7E28
+
+GameOSD_Bomb.cpp:
+	.text       start:0x8005C4EC end:0x8005C6B4
+
+GameOSD_Charisma.cpp:
+	.text       start:0x8005C6B4 end:0x8005E578
+
+GameOSD_Health.cpp:
+	.text       start:0x8005E578 end:0x8005E64C
+
+GameOSD_Inventory.cpp:
+	.text       start:0x8005E64C end:0x8005EE88
+
+GameOSD_IO.cpp:
+	.text       start:0x8005EE88 end:0x8005F8A0
+
+GameOSD_MP.cpp:
+	.text       start:0x8005F8A0 end:0x8005FAE4
+
+GameOSD_WheelInventory.cpp:
+	.text       start:0x8005FAE4 end:0x80060814
 
 Charisma.cpp:
 	.text       start:0x80060814 end:0x80060C80
@@ -1045,7 +1544,7 @@ geombuffer.cpp:
 ListUser.cpp:
 	.text       start:0x8020D41C end:0x8020E83C
 
-locale.cpp:
+game/locale.cpp:
 	.text       start:0x8020E83C end:0x8020EEB0
 
 savegame.cpp:
