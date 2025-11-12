@@ -10,6 +10,12 @@ Sections:
 	.sbss       type:bss align:32
 	.sdata2     type:rodata align:8
 
+eabi.asm:
+	.bss        start:0x8047C2A0 end:0x8047D680
+	.sdata      start:0x805AA480 end:0x805AA488
+	.sbss       start:0x805AB640 end:0x805AB654
+	.sdata2     start:0x805AC000 end:0x805AC008
+
 impure.c:
 	.data       start:0x80426E40 end:0x80427144
 
@@ -175,6 +181,9 @@ __cmpdi2.c:
 __divdi3.c:
 	.text       start:0x80015E80 end:0x800163FC
 	.sdata2     start:0x805AC400 end:0x805AC500
+
+_exit.c:
+	.text       start:0x800163FC end:0x80016404
 
 __fixdfdi.c:
 	.text       start:0x80016404 end:0x80016448
@@ -524,6 +533,9 @@ TargetObtained2.cpp:
 	.ctors      start:0x803B7AAC end:0x803B7AB0
 	.dtors      start:0x803B7E2C end:0x803B7E30
 
+ActorActionMarker.cpp:
+	.text       start:0x800612E0 end:0x8006184C
+
 FFCameraClass.cpp:
 	.text       start:0x8006184C end:0x80061C8C
 	.ctors      start:0x803B7AB0 end:0x803B7AB4
@@ -545,10 +557,21 @@ ZFFActor.cpp:
 	.ctors      start:0x803B7ABC end:0x803B7AC0
 	.dtors      start:0x803B7E3C end:0x803B7E40
 
+ZFFActorActions.cpp:
+	.text       start:0x80074DB8 end:0x80075EBC
+
 ZFFHero.cpp:
 	.text       start:0x80075EBC end:0x80086A80
 	.ctors      start:0x803B7AC0 end:0x803B7AC4
 	.dtors      start:0x803B7E40 end:0x803B7E44
+
+ZFFHeroActions.cpp:
+	.text       start:0x80086A80 end:0x80088CAC
+
+ZFFHeroMovement.cpp:
+	.text       start:0x80088CAC end:0x80093634
+	.rodata     start:0x803C49AC end:0x803F0A04
+	.sdata      start:0x805AAA00 end:0x805AAA08
 
 CheckInsideBox.cpp:
 	.text       start:0x80093634 end:0x80093E88
@@ -625,11 +648,19 @@ CamHelper.cpp:
 	.ctors      start:0x803B7AFC end:0x803B7B00
 	.dtors      start:0x803B7E7C end:0x803B7E80
 
+ffcam.cpp:
+	.text       start:0x800A64B4 end:0x800A7EF0
+	.ctors      start:0x803B7B00 end:0x803B7B04
+	.dtors      start:0x803B7E80 end:0x803B7E84
+
 FFCamera1.cpp:
 	.text       start:0x800A7EF0 end:0x800AB184
 	.ctors      start:0x803B7B04 end:0x803B7B08
 	.dtors      start:0x803B7E84 end:0x803B7E88
 	.sdata      start:0x805AAA08 end:0x805AAA34
+
+ffpointer.cpp:
+	.text       start:0x800AB184 end:0x800AB690
 
 fftargelist.cpp:
 	.text       start:0x800AB690 end:0x800AB9CC
@@ -651,6 +682,11 @@ MP_GameController.cpp:
 	.ctors      start:0x803B7B14 end:0x803B7B18
 	.dtors      start:0x803B7E94 end:0x803B7E98
 	.sdata      start:0x805AAA34 end:0x805AAA40
+
+mp_recyclelist.cpp:
+	.text       start:0x800AF544 end:0x800B0134
+	.ctors      start:0x803B7B18 end:0x803B7B1C
+	.dtors      start:0x803B7E98 end:0x803B7E9C
 
 ZFFItemBomb.cpp:
 	.text       start:0x800B0134 end:0x800B0F54
@@ -2159,11 +2195,6 @@ stripcolitreecompiled.cpp:
 	.sdata      start:0x805AAFF8 end:0x805AB00C
 	.sdata2     start:0x805ACB90 end:0x805ACB98
 
-prodg_fixes.cpp:
-	.ctors      start:0x803B7AA0 end:0x803B7AA4 skip
-	.dtors      start:0x803B7E20 end:0x803B7E24 skip
-	.sdata2     start:0x805AD4F8 end:0x805AD500 skip
-
 boundgatecheck.cpp:
 	.text       start:0x8030E4A0 end:0x8030F3B4
 
@@ -2254,7 +2285,10 @@ soundstreamer.cpp:
 
 synth.cpp:
 	.text       start:0x8033AF54 end:0x8033D250
-	.rodata     start:0x80414804 end:0x804179A8
+	.rodata     start:0x80414804 end:0x804178A4
+
+ctype_.c:
+	.rodata     start:0x804178A4 end:0x804179A8
 
 soundstreamergc.cpp:
 	.text       start:0x8033D250 end:0x8033D6CC
@@ -2338,3 +2372,474 @@ zwinpic.cpp:
 	.text       start:0x8034DE68 end:0x8034E31C
 	.ctors      start:0x803B7E18 end:0x803B7E1C
 	.dtors      start:0x803B817C end:0x803B8180
+
+ZRObjectInstanceStripGCDynLight.cpp:
+	.text       start:0x8034E31C end:0x8034E500
+	.sdata      start:0x805AB058 end:0x805AB060
+
+ZRObjectInstanceStripVertAnimGC.cpp:
+	.text       start:0x8034E500 end:0x8034EB9C
+	.sdata      start:0x805AB060 end:0x805AB068
+
+ZRObjectInstanceBonesVSGC.cpp:
+	.text       start:0x8034EB9C end:0x8034F4C8
+	.sdata      start:0x805AB068 end:0x805AB5C8
+
+inevent.cpp:
+	.text       start:0x8034F4C8 end:0x8034FAAC
+
+glacierhost.cpp:
+	.text       start:0x8034FAAC end:0x803516F8
+
+zfont.cpp:
+	.text       start:0x803516F8 end:0x80351874
+
+e_acos.s:
+	.text       start:0x80351874 end:0x80351AF0
+	.sdata2     start:0x805ACB98 end:0x805ACC08
+
+e_asin.s:
+	.text       start:0x80351AF0 end:0x80351D4C
+	.sdata2     start:0x805ACC08 end:0x805ACC80
+
+e_fmod.s:
+	.text       start:0x80351D4C end:0x803520D8
+	.sdata2     start:0x805ACC80 end:0x805ACC98
+
+e_log.s:
+	.text       start:0x803520D8 end:0x80352368
+	.sdata2     start:0x805ACC98 end:0x805ACCF0
+
+e_log10.s:
+	.text       start:0x80352368 end:0x80352494
+	.sdata2     start:0x805ACCF0 end:0x805ACD18
+
+e_pow.s:
+	.text       start:0x80352494 end:0x80352CAC
+	.sdata2     start:0x805ACD18 end:0x805ACE20
+
+s_atan.s:
+	.text       start:0x80352CAC end:0x80352EEC
+	.sdata2     start:0x805ACE20 end:0x805ACEC8
+
+s_ceil.s:
+	.text       start:0x80352EEC end:0x80353054
+	.sdata2     start:0x805ACEC8 end:0x805ACED0
+
+s_isnan.s:
+	.text       start:0x80353054 end:0x80353094
+
+ef_acos.s:
+	.text       start:0x80353094 end:0x803532E4
+	.sdata2     start:0x805ACED0 end:0x805ACF08
+
+ef_asin.s:
+	.text       start:0x803532E4 end:0x80353510
+	.sdata2     start:0x805ACF08 end:0x805ACF44
+
+ef_pow.s:
+	.text       start:0x80353510 end:0x80353C40
+	.sdata2     start:0x805ACF44 end:0x805ACFC8
+
+ef_sqrt.s:
+	.text       start:0x80353C40 end:0x80353D4C
+	.sdata2     start:0x805ACFC8 end:0x805ACFD0
+
+wf_log.s:
+	.text       start:0x80353D4C end:0x80353D6C
+
+sf_ceil.s:
+	.text       start:0x80353D6C end:0x80353E44
+	.sdata2     start:0x805ACFD0 end:0x805ACFD4
+
+sf_cos.s:
+	.text       start:0x80353E44 end:0x80353F20
+	.sdata2     start:0x805ACFD4 end:0x805ACFD8
+
+sf_fabs.s:
+	.text       start:0x80353F20 end:0x80353F44
+
+sf_floor.s:
+	.text       start:0x80353F44 end:0x8035401C
+	.sdata2     start:0x805ACFD8 end:0x805ACFDC
+
+sf_sin.s:
+	.text       start:0x8035401C end:0x803540F8
+
+sf_tan.s:
+	.text       start:0x803540F8 end:0x80354178
+
+sf_scalbn.s:
+	.text       start:0x80354178 end:0x80354294
+	.sdata2     start:0x805ACFDC end:0x805ACFEC
+
+kf_cos.s:
+	.text       start:0x80354294 end:0x8035437C
+	.sdata2     start:0x805ACFEC end:0x805AD008
+
+kf_sin.s:
+	.text       start:0x8035437C end:0x80354428
+	.sdata2     start:0x805AD008 end:0x805AD024
+
+kf_tan.s:
+	.text       start:0x80354428 end:0x8035464C
+	.sdata2     start:0x805AD024 end:0x805AD064
+
+ef_log.s:
+	.text       start:0x8035464C end:0x803548CC
+	.sdata2     start:0x805AD064 end:0x805AD090
+
+ef_rem_pio.s:
+	.text       start:0x803548CC end:0x80354C1C
+	.sdata2     start:0x805AD090 end:0x805AD450
+
+sf_copysign.s:
+	.text       start:0x80354C1C end:0x80354C50
+
+kf_rem_pio.s:
+	.text       start:0x80354C50 end:0x803554DC
+	.sdata2     start:0x805AD450 end:0x805AD4A0
+
+tolower.c:
+	.text       start:0x803554DC end:0x803554F8
+
+printf.c:
+	.text       start:0x803554F8 end:0x80355640
+
+sprintf.c:
+	.text       start:0x80355640 end:0x803557EC
+
+sscanf.c:
+	.text       start:0x803557EC end:0x803558E4
+
+vfscanf.c:
+	.text       start:0x803558E4 end:0x803567BC
+	.rodata     start:0x804179A8 end:0x80417AC4
+
+C-ctype.c:
+	.rodata     start:0x80417AC4 end:0x80422DC0
+
+vprintf.c:
+	.text       start:0x803567BC end:0x803567F0
+
+vsprintf.c:
+	.text       start:0x803567F0 end:0x803568C0
+
+atexit.c:
+	.text       start:0x803568C0 end:0x80356958
+
+atof.c:
+	.text       start:0x80356958 end:0x8035697C
+
+atoi.c:
+	.text       start:0x8035697C end:0x803569FC
+
+atol.c:
+	.text       start:0x803569FC end:0x80356A24
+
+bsearch.c:
+	.text       start:0x80356A24 end:0x80356ABC
+
+qsort.c:
+	.text       start:0x80356ABC end:0x80357448
+
+rand.c:
+	.text       start:0x80357448 end:0x80357478
+
+strdup.c:
+	.text       start:0x80357478 end:0x803574A0
+
+strdup_r.c:
+	.text       start:0x803574A0 end:0x80357528
+
+strtod2.c:
+	.text       start:0x80357528 end:0x80357878
+	.data       start:0x80436CA4 end:0x80436CF8
+	.sdata      start:0x805AB5C8 end:0x805AB5CC
+
+ctype-info.c:
+	.sdata      start:0x805AB5CC end:0x805AB5F0
+
+sn_buf.cpp:
+	.data       start:0x80436CF8 end:0x80436D48
+
+strtoul.c:
+	.text       start:0x80357878 end:0x80357A48
+
+memcmp.c:
+	.text       start:0x80357A48 end:0x80357AD8
+
+strcasecmp.c:
+	.text       start:0x80357AD8 end:0x80357B6C
+
+strcat.c:
+	.text       start:0x80357B6C end:0x80357BFC
+
+strchr.c:
+	.text       start:0x80357BFC end:0x80357C98
+
+strncasecmp.c:
+	.text       start:0x80357C98 end:0x80357D54
+
+strncat.c:
+	.text       start:0x80357D54 end:0x80357E00
+
+strncmp.c:
+	.text       start:0x80357E00 end:0x80357EE0
+
+strncpy.c:
+	.text       start:0x80357EE0 end:0x80357FAC
+
+strpbrk.c:
+	.text       start:0x80357FAC end:0x8035802C
+
+strrchr.c:
+	.text       start:0x8035802C end:0x80358078
+
+strstr.c:
+	.text       start:0x80358078 end:0x803580E0
+
+wcstol.c:
+	.text       start:0x803580E0 end:0x803582FC
+
+strtol.c:
+	.text       start:0x803582FC end:0x803584E4
+
+isdigit.c:
+	.text       start:0x803584E4 end:0x803584F8
+
+isspace.c:
+	.text       start:0x803584F8 end:0x8035850C
+
+errno.c:
+	.text       start:0x8035850C end:0x80358514
+
+fread.c:
+	.text       start:0x80358514 end:0x80358620
+
+refill.c:
+	.text       start:0x80358620 end:0x803587B4
+
+ungetc.c:
+	.text       start:0x803587B4 end:0x80358938
+
+wcfuncs.c:
+	.text       start:0x80358938 end:0x80359040
+
+fflush.c:
+	.text       start:0x80359040 end:0x80359134
+
+fopen.c:
+	.text       start:0x80359134 end:0x803594EC
+	.bss        start:0x805A9D6C end:0x805A9D78
+	.sdata      start:0x805AB5F0 end:0x805AB5F8
+
+fseek.c:
+	.text       start:0x803594EC end:0x803598D0
+
+fwalk.c:
+	.text       start:0x803598D0 end:0x80359950
+
+makebuf.c:
+	.text       start:0x80359950 end:0x80359A28
+
+stdio.c:
+	.text       start:0x80359A28 end:0x80359B88
+
+closer.c:
+	.text       start:0x80359B88 end:0x80359BD8
+
+fstatr.c:
+	.text       start:0x80359BD8 end:0x80359C30
+
+lseekr.c:
+	.text       start:0x80359C30 end:0x80359C88
+
+openr.c:
+	.text       start:0x80359C88 end:0x80359CE4
+
+readr.c:
+	.text       start:0x80359CE4 end:0x80359D3C
+
+writer.c:
+	.text       start:0x80359D3C end:0x80359D94
+
+flags.c:
+	.text       start:0x80359D94 end:0x80359E30
+
+__main.c:
+	.text       start:0x80359E30 end:0x80359F5C
+	.data       start:0x80436D48 end:0x80436D54
+	.bss        start:0x805A9D78 end:0x805A9D7C
+
+pure.c:
+	.text       start:0x80359F5C end:0x80359F7C
+
+eh.c:
+	.text       start:0x80359F7C end:0x8035A52C
+	.data       start:0x80436D54 end:0x80436D58
+	.bss        start:0x805A9D7C end:0x805A9D98
+
+VM.c:
+	.text       start:0x8035A52C end:0x8035AB80
+	.sdata      start:0x805AB5F8 end:0x805AB600
+	.sbss       start:0x805ABEC8 end:0x805ABEE8
+
+VMPageReplacement.c:
+	.text       start:0x8035AB80 end:0x8035AE94
+	.sdata      start:0x805AB600 end:0x805AB608
+	.sbss       start:0x805ABEE8 end:0x805ABEF0
+
+VMMapping.c:
+	.text       start:0x8035AE94 end:0x8035B3E0
+	.data       start:0x80436D58 end:0x80436DC0
+	.sbss       start:0x805ABEF0 end:0x805ABF00
+
+VMBase.c:
+	.text       start:0x8035B3E0 end:0x8035C268
+	.sbss       start:0x805ABF00 end:0x805ABF20
+
+OSFatal.c:
+	.text       start:0x8035C268 end:0x8035D118
+	.bss        start:0x805A9D98 end:0x805AA070
+	.sdata      start:0x805AB608 end:0x805AB610
+	.sdata2     start:0x805AD4A0 end:0x805AD4E0
+
+OSFont.c:
+	.text       start:0x8035D118 end:0x8035E4F4
+	.data       start:0x80436DC0 end:0x804378D0
+	.sdata      start:0x805AB610 end:0x805AB628
+	.sbss       start:0x805ABF20 end:0x805ABF30
+	.sdata2     start:0x805AD4E0 end:0x805AD4E8
+
+CARDBios.c:
+	.text       start:0x8035E4F4 end:0x8035FD54
+	.data       start:0x804378D0 end:0x80437928
+	.bss        start:0x805AA070 end:0x805AA480
+	.sbss       start:0x805ABF30 end:0x805ABFEC
+
+sbrkr.c:
+	.sbss       start:0x805ABFEC end:0x805ABFF0
+
+CARDBlock.c:
+	.text       start:0x8035FD54 end:0x80360158
+
+CARDDir.c:
+	.text       start:0x80360158 end:0x803603BC
+
+CARDCheck.c:
+	.text       start:0x803603BC end:0x803613A8
+
+CARDMount.c:
+	.text       start:0x803613A8 end:0x80361EF4
+	.data       start:0x80437928 end:0x80437980
+
+CARDFormat.c:
+	.text       start:0x80361EF4 end:0x80362774
+
+CARDOpen.c:
+	.text       start:0x80362774 end:0x80362D28
+
+CARDCreate.c:
+	.text       start:0x80362D28 end:0x803630C0
+
+CARDRead.c:
+	.text       start:0x803630C0 end:0x803635C4
+
+CARDWrite.c:
+	.text       start:0x803635C4 end:0x80363940
+
+CARDDelete.c:
+	.text       start:0x80363940 end:0x80363CB0
+
+CARDStat.c:
+	.text       start:0x80363CB0 end:0x80364190
+
+CARDNet.c:
+	.text       start:0x80364190 end:0x8036443C
+
+CARDUnlock.c:
+	.text       start:0x8036443C end:0x80365A04
+	.data       start:0x80437980 end:0x80437AE0
+	.sdata      start:0x805AB628 end:0x805AB62C
+
+CARDRdwr.c:
+	.text       start:0x80365A04 end:0x80365C9C
+
+CARDStatEx.c:
+	.text       start:0x80365C9C end:0x80365FF4
+
+expatpp.cpp:
+	.text       start:0x80365FF4 end:0x803667F8
+
+xmlparse.c:
+	.text       start:0x803667F8 end:0x8036DAC0
+	.rodata     start:0x80422DC0 end:0x804230F0
+	.data       start:0x80437AE0 end:0x80437BA0
+
+xmlrole.c:
+	.text       start:0x8036DAC0 end:0x8036F894
+	.rodata     start:0x804230F0 end:0x804231B0
+	.data       start:0x80437BA0 end:0x80437C18
+
+xmltok.c:
+	.text       start:0x8036F894 end:0x8037CB9C
+	.rodata     start:0x804231B0 end:0x80424D50
+	.data       start:0x80437C18 end:0x80437CC0
+
+crc32.c:
+	.text       start:0x8037CB9C end:0x8037CCEC
+	.rodata     start:0x80424D50 end:0x80425188
+
+deflate.c:
+	.text       start:0x8037CCEC end:0x8037EB2C
+	.rodata     start:0x80425188 end:0x80425278
+	.sdata      start:0x805AB62C end:0x805AB630
+
+inflate.c:
+	.text       start:0x8037EB2C end:0x8037F5A8
+	.sdata2     start:0x805AD4E8 end:0x805AD4F8
+
+prodg_fixes.cpp:
+	.ctors      start:0x803B7AA0 end:0x803B7AA4 skip
+	.dtors      start:0x803B7E20 end:0x803B7E24 skip
+	.sdata2     start:0x805AD4F8 end:0x805AD500 skip
+
+trees.c:
+	.text       start:0x8037F5A8 end:0x80381454
+	.rodata     start:0x80425278 end:0x80425D34
+	.data       start:0x80437CC0 end:0x80437D24
+
+zutil.c:
+	.text       start:0x80381454 end:0x803814E0
+
+adler32.c:
+	.text       start:0x803814E0 end:0x80381664
+
+infblock.c:
+	.text       start:0x80381664 end:0x80382400
+	.rodata     start:0x80425D34 end:0x80425E8C
+
+infcodes.c:
+	.text       start:0x80382400 end:0x80382C48
+
+inffast.c:
+	.text       start:0x80382C48 end:0x80383014
+
+inftrees.c:
+	.text       start:0x80383014 end:0x80383888
+	.rodata     start:0x80425E8C end:0x804261E0
+	.data       start:0x80437D24 end:0x8047C2A0
+	.sdata      start:0x805AB630 end:0x805AB640
+
+infutil.c:
+	.text       start:0x80383888 end:0x80383A08
+
+externmemory.cpp:
+	.text       start:0x80383A08 end:0x80383B58
+
+assert.c:
+	.text       start:0x80383B58 end:0x80383B88
+
+fiprintf.c:
+	.text       start:0x80383B88 end:0x803B7AA0
